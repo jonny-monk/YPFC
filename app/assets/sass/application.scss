@@ -20,6 +20,15 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/explore";
 @import "patterns/gem-c-cards";
 @import "patterns/erh";
+@import "patterns/alt-card";
+@import "patterns/cards";
+@import "patterns/contents";
+@import "patterns/full-width-heading";
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/top-navigation";
+
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 @import "components/jobprofile";

@@ -1,0 +1,5 @@
+.full-width-header{
+    @include govuk-width-container(2000px);
+    background: #104F75;
+    color: white;
+  }

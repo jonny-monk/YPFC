@@ -1,0 +1,16 @@
+
+.content-list {
+    & li {
+        padding-bottom: 5px;
+    }
+}
+
+.active-content {
+    font-weight: 600;
+}
+
+.app-back-to-contents {
+	position: fixed;
+	bottom: 0px;
+	display: none;
+  }

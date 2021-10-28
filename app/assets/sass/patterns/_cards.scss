@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+.choice-header {
+    background: #104F75;
+}
+
+.page-title-header {
+  margin-top: -70px;
+  width:100%;
+  padding-right:15px
+}
+
+.choice-title, .choice-body{
+    color: white;
+}
+
+.choice-link {
+    color: white!important;
+    margin-top: 50px;
+}
+
+.choice-link:focus {
+    color: black!important;
+}
+
+.card h3 a {
+  margin:7px;  
+}
+
+.container { 
+  display: flex; /*Make sure to call this on your container*/
+  align-items: stretch; /*stretches all cards same height*/
+  justify-content: space-around; /*some space between cards*/
+}
+
+
+.card {
+  max-width: 20em;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 1px #cccccc;
+  position: relative;
+  margin: 0.5em;
+  margin-bottom: 30px;
+  background: #f5f5f5;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 0px 4px #000000;
+}
+
+.card h3 a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.card h3{
+  padding:0 0 0 0.4em;
+}
+.text {
+  padding: 0 1em 1em 1em;
+}
+
+.cardThumbnail {
+  padding: none;
+  border-radius: 3px 3px 0px 0px;
+  margin: none;
+  width: 100%;
+}
+
+.app-back-to-top__icon {
+  display: inline-block;
+  width: .8em;
+  height: 1em;
+  margin-top: -5px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.tile-title {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 625px) {
+  .svg-icon {
+    display: none;
+  }
+}
+
+.active {
+  box-shadow: 0 -2px, 0 4px #0b0c0c;
+  background: rgb(226, 226, 226);
+}
+
+.active:hover {
+  box-shadow: 1px 1px 10px 1px #cccccc;
+  box-shadow: 0 -2px, 0 4px #0b0c0c;
+  background: rgb(226, 226, 226);
+
+
+}
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
