@@ -1,0 +1,517 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+ Post-16 options
+{% endblock %}
+
+{% block beforeContent %} {{ super() }}
+
+{{ govukBackLink ({
+        text: 'Back to post-16 options',
+        href: 'index'
+    }) }}
+
+<nav class="govuk-body-s">
+   <ul class="nav-list">
+     <li>
+      <a href="alevels">A-Levels</a>
+     </li>
+     <li>
+      <a href="apprenticeship"> Apprenticeship</a>
+      
+     </li>
+     <li>
+       <a href="supportedinternship">Supported Internship</a>
+     </li>
+     <li>
+       <a href="tlevels">T-Levels</a>
+     </li>
+     <li>
+      <a href="traineeship">Traineeship</a>
+     </li>
+     <li>
+      <a href="vtq">VTQs</a>
+     </li>
+ </ul> 
+</nav>
+
+{% endblock %}
+
+{% block content %}
+
+    </div>
+
+    <div class="govuk-grid-row">
+      
+<div class="govuk-grid-column-full">
+  <div style="padding:30px">
+
+{{ govukTable({
+  caption: "Compare your choices after your GCSEs",
+  captionClasses: "govuk-table__caption--l govuk-!-padding-bottom-7",
+  firstCellIsHeader: true,
+  head: [
+    {
+      text: "Qualification"
+    },
+    {
+      text: "Description"
+    },
+     {
+      text: "Length of time"
+    },
+     {
+      text: "Assessment"
+    },
+     {
+      text: "Level of study"
+    },
+     {
+      text: "Awards UCAS points?"
+    },
+     {
+      text: "Entry requirements"
+    },
+     {
+      text: "Work experience"
+    },
+    {
+      text: "What does it lead to?"
+    }
+  ],
+  rows: [
+    [
+      {
+        text: "Apprenticeship"
+      },
+      {
+        text: "A real job with training and a salary"
+      },
+      {
+        text: "1 year minimum"
+      },
+      {
+        text: "Depends on the apprenticeship but may include demonstrations, presentations, and/or exams"
+      },
+      {
+        text: "2/3 With possibility to progress to higher apprenticeships up to level 7"
+      },
+      {
+        text: "No"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Employer dependent
+       </li>
+       <li>
+         Age 16+
+       </li>
+       <li>
+        Evidence of interest and ability to complete the apprenticeship
+       </li>
+     </ul>"
+      },
+      {
+        text: "Yes (paid job with at least 20% off‑the‑job training)"
+      },
+      {
+          html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Higher level or degree apprenticeship
+       </li>
+       <li>
+       University or college
+       </li>
+       <li>
+        Work
+       </li>
+     </ul>"
+      }
+    ],
+    [
+      {
+        text: "A Levels"
+      },
+      {
+        text: "An academic qualification similar in style to GCSEs, that prepares you for further study"
+      },
+      {
+        text: "2 years"
+      },
+      {
+        text: "Mostly exams at the end of the course"
+      },
+      {
+        text: "3"
+      },
+      {
+        text: "Yes"
+      },
+      {
+        text: "For individual schools and colleges to decide (commonly 5 GCSEs at grades 4 and above)"
+      },
+      {
+        text: "No"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Apprenticeship
+       </li>
+       <li>
+       University or college
+       </li>
+       <li>
+        Work
+       </li>
+     </ul>"
+      }
+    ],
+    [
+      {
+        text: "T Levels"
+      },
+      {
+        text: "A technical study course, equivalent to 3 A levels, with an industry placement that makes up 20% of the course. T levels are designed to give you the skills that employers need"
+      },
+      {
+        text: "2 years"
+      },
+      {
+        text: "Exams, projects and practical assignments"
+      },
+      {
+        text: "3"
+      },
+      {
+        text: "Yes"
+      },
+      {
+        text: "Set by each school/college"
+      },
+      {
+        text: "Yes (80% classroom, 20% work)"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Apprenticeship
+       </li>
+       <li>
+       University or college
+       </li>
+       <li>
+        Work
+       </li>
+     </ul>"
+      }
+    ],
+    [
+      {
+        text: "Technical/Vocational qualifications"
+      },
+      {
+        text: "Qualifications which teach you how to do tasks specifically related to the industry and role you want to be in"
+      },
+      {
+        text: "Course dependent"
+      },
+      {
+        text: "Depends on the course but may include coursework and/or exams"
+      },
+      {
+        text: "1+"
+      },
+      {
+        text: "Some – depends on the course and awarding organisation"
+      },
+      {
+        text: "Course dependent"
+      },
+      {
+        text: "Course dependent"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Apprenticeship
+       </li>
+       <li>
+       University or college
+       </li>
+       <li>
+        Work
+       </li>
+     </ul>"
+      }
+    ],
+    [
+      {
+        text: "Applied qualifications"
+      },
+      {
+        text: "Qualifications that prepare you for further study by combining academic learning with practical skills to give you a broad overview of working in a sector "
+      },
+      {
+        text: "Course dependent"
+      },
+      {
+        text: "Depends on the course but may include coursework and/or exams"
+      },
+      {
+        text: "3"
+      },
+      {
+        text: "Yes"
+      },
+      {
+        text: "Set by each school/college"
+      },
+      {
+        text: "Course dependent"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+       <li>
+         Apprenticeship
+       </li>
+       <li>
+       University or college
+       </li>
+       <li>
+        Work
+       </li>
+     </ul>"
+      }
+    ],
+    [
+      {
+        text: "Traineeships"
+      },
+      {
+        text: "A work‑focused study programme that prepares you for an apprenticeship or work"
+      },
+      {
+        text: "6 weeks to 1 year, but most will be under 6 months"
+      },
+      {
+        text: "Your employer should offer an interview for an apprenticeship or job if available, or an exit interview with written feedback"
+      },
+      {
+        text: "N/A"
+      },
+      {
+        text: "No"
+      },
+      {
+        html: "<p> You can apply if you have little or no work experience but are: </p>
+        <ul class='govuk-list govuk-list--bullet'>
+       <li>
+         motivated to work
+       </li>
+       <li>
+       aged 16 to 24 (or 25 with an EHC plan)
+       </li>
+       <li>
+        qualified up to level 3
+       </li>
+     </ul>"
+      },
+      {
+        text: "Yes (minimum of 70 hours)"
+      },
+      {
+        html: "<ul class='govuk-list govuk-list--bullet'>
+                <li>
+                  Apprenticeship
+                </li>
+                <li>
+                Work
+                </li>     
+              </ul>"
+      }
+    ]
+  ]
+}) }}
+
+
+  <div class="govuk-width-container">
+<div id="choices" class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Options </h2> 
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+        
+ {# A-LEVELS CARD #}
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
+      <h3 class="govuk-heading-s"><a href="alevels">A-Levels</a></h3>
+      <div class="text">
+       <p>Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
+      </div>
+    </div>
+  </div>
+
+{# APPRENTICESHIP CARD #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
+      <div class="text">
+        <p>Apprenticeships are for those aged 16 or over and combine working with studying to gain skills and knowledge in a specific job.<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+{# SUPPORTED INTERNSHIP CARD  #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internship</a></h3>
+      <div class="text">
+        <p>Supported internships allow young people aged 16 to 24 with an Education, Health and Care plan (EHC), who need extra support to move into employment.</p> 
+      </div>
+    </div>
+  </div>
+  </div>
+    
+{# T-LEVELS CARD  #}
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="tlevels">T-Levels</a></h3>
+      <div class="text">
+        <p>T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. They are a 2-year qualification and the equivalent to 3 A levels.</p> 
+      </div>
+    </div>
+  </div>
+
+
+
+        
+{# TRAINEESHIP CARD  #}
+
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
+      <div class="text">
+        <p>A traineeship is a skills development programme that includes a work placement that can last from 6 weeks up to 1 year.
+</p> 
+      </div>
+    </div>
+  </div>
+
+    
+{# Vocational Technical Qualifications (VTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <div class="text">
+        <p>Vocational qualifications are work-related qualifications available in a wide range of career areas.</p> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+{#  NO IMAGE CARDS  #}
+
+
+<div id="cardGroupNoImages" class="govuk-grid-row card-group-no-images">
+
+{# A-LEVELS CARD #}
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s"><a href="alevels">A-Levels</a></h3>
+      <div class="text">
+       <p>Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
+      </div>
+    </div>
+  </div>
+
+{# APPRENTICESHIP CARD #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card active">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s">Apprenticeship</h3>
+      <div class="text">
+        <p>Apprenticeships are for those aged 16 or over and combine working with studying to gain skills and knowledge in a specific job<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+{# SUPPORTED INTERNSHIP CARD  #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s"><a href="supportedinternship">Supported internship</a></h3>
+      <div class="text">
+        <p>Supported internships allow young people aged 16 to 24 with an Education, Health and Care plan (EHC), who need extra support to move into employment.
+</p> 
+      </div>
+    </div>
+  </div>
+    
+{# T-LEVELS CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s"><a href="tlevels">T-Levels</a></h3>
+      <div class="text">
+        <p>T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. They are a 2-year qualification and the equivalent to 3 A levels.</p> 
+      </div>
+    </div>
+  </div>
+
+
+
+        
+{# TRAINEESHIP CARD  #}
+
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
+      <div class="text">
+        <p>A traineeship is a skills development programme that includes a work placement that can last from 6 weeks up to 1 year.<br></p> 
+      </div>
+    </div>
+  </div>
+
+    
+{# Vocational Technical Qualifications (VTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <h3 style="padding-top: 10px;" class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <div class="text">
+        <p>Vocational qualifications are work-related qualifications available in a wide range of career areas.<br><br></p> 
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+{# END OF CHOICES CARDS #}
+     
+   </div>
+   </div>
+   </div>
+
+    
+{% endblock %}
