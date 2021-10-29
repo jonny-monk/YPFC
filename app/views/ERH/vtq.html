@@ -2,97 +2,116 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
- Post-16 options
+Vocational Technical Qualifications (VTQs)
+{% endblock %}
+
+{% block beforeContent %} {{ super() }}
+
+{{ govukBackLink ({
+        text: 'Back to post-16 options',
+        href: 'index'
+    }) }}
+
+<nav class="govuk-body-s">
+   <ul class="nav-list">
+     <li>
+      <a href="alevels">A-Levels</a>
+     </li>
+     <li>
+       <a href="apprenticeship">Apprenticeship</a>
+     </li>
+     <li>
+       <a href="supportedinternship">Supported Internship </a>
+     </li>
+     <li>
+       <a href="tlevels">T-Levels</a>
+     </li>
+     <li>
+      <a href="traineeship">Traineeship</a>
+     </li>
+     <li>
+      VTQs
+     </li>
+ </ul> 
+</nav>
+
 {% endblock %}
 
 {% block content %}
 
-<div class="govuk-width-container">
-    <div class="govuk-breadcrumbs">
-      <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">Get the Jump</a> </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">Options at age 16+</li>
-      </ol>
-    </div>
-  </div>
+</div>
 
-  <div class="govuk-grid-row">
+<div class="govuk-grid-row page-title-header choice-header  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
+  <div class="govuk-width-container">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Options at age 16+        
-      </h1>
-      <p>
-        You must stay in some type of education or training until you are 18. There are many options available when you turn 16, look at what option best suits you and your situation, strengths and interests.
-      </p>
-      <p>
-      You can leave school on the last Friday in June if you'll be 16 by the end of the summer holidays.
-      </p>
-      <p>
-      You must then do one of the following until you're 18:
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          stay in full-time education, for example at school, sixth form college of further education college
-        </li>
-        <li>
-          start an apprenticeship or traineeship
-        </li>
-        <li>
-          spend 20 hours or more a week working or volunteering while also doing part-time education or training
-        </li>
-      </ul>
-      </p>
-      <p>
-        Your local authority has a duty to make sure you are offered a suitable place by the end of September. Contact your local Authority for information on who can help you find a suitable offer.
-
-      </p>
-
-    
+      <h2 id="alevels" class="govuk-heading-l choice-title">
+       Vocational Technical Qualifications (VTQs)
+      </h2>
+      <p class="govuk-body choice-body">
+      Placeholder content
+      </p>      
     </div>
     <div class="govuk-grid-column-one-third">
-         <aside class="app-related-items" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Speak to an adviser
-          </h2>
-          <ul class="govuk-list">
-            <li>
-             <strong> Call </strong> 0800 100 900 or <a href="#"> use webchat </a>
-            </li>
-            <li>
-              8am - 8pm Monday - Friday
-            </li>
-            <li>
-              10am - 5pm Saturday 
-            </li>
-          </ul>
-            
-        </aside>
-         <aside class="app-related-items" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Other opportunities
-          </h2>
-          <ul class="govuk-list">
-            <li>
-              You could look at what <a href="">work and study options</a> will be available to you at 18
-            </li>
-            <li>
-              You could also consider <a href="">volunteering</a> to strengthen your job and study opportunities
-            </li>
-          </ul>                  
-        </aside>
-    </div> 
+           <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+    </div>
   </div>
+    </div>
+  
+    <div class="govuk-width-container govuk-!-padding-top-5">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+  <h2 class="govuk-heading-m"> 
+  How much do Vocational Technical Qualifications cost 
+  </h2>
+  <p>Content about Vocational Technical Qualifications cost will be here. </p>
+  
 
-  <div id="choices" class="govuk-grid-row">
+  
+
+  <h2 class="govuk-heading-m"> 
+Get help and advice
+  </h2>
+<p> Content placeholder </p>
+
+<h2 class="govuk-heading-m"> 
+Real experiences
+  </h2>
+
+  <h3 class="govuk-heading-s"> Name of person </h3> 
+  <p> Brief summary of what video is about </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nYOcO97FKqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Name of person </h3> 
+  <p> Brief summary of what video is about </p>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/YOcO97FKqI"
+  frameborder="0"></iframe>
+
+
+  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Name of person </h3> 
+  <p> Brief summary of what video is about </p>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+  src="https://www.youtube.com/embed/YOcO97FKqI"
+  frameborder="0"></iframe>
+
+</div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<div id="choices" class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Options </h2> 
+     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Other options </h2> 
     </div>
   </div>
 <p class="govuk-body govuk-!-padding-bottom-3">
-<a class="govuk-link" href="which-schemes"> Compare all options in a table </a>
+<a class="govuk-link" href="compare"> Compare all options in a table </a>
 </p>
   <div class="govuk-grid-row">
- {# A-LEVELS CARD #}
+        {# A-LEVELS CARD #}
   <div class="govuk-grid-column-one-third">
     <div class="card">
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
@@ -162,9 +181,9 @@
 {# Vocational Technical Qualifications (VTQs) CARD  #}
 
 <div class="govuk-grid-column-one-third">
-    <div class="card">
+    <div class="card active">
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <h3 class="govuk-heading-s">Vocational Technical Qualifications (VTQs)</h3>
       <div class="text">
         <p>Vocational qualifications are work-related qualifications available in a wide range of career areas.</p> 
       </div>
@@ -176,37 +195,9 @@
 </div>
 
 
-
-{% endblock %}
-
-
-
+</div>
+</div>
+</div>
 
 
-
-
-
-{% block scripts %}
-
-<script>
-
-function ShowWithoutImages() {
-  var cardWithImage = document.getElementById("cardGroupWithImages");
-  var linkTitle = document.getElementById("showWithoutImages");
-  var cardNoImage = document.getElementById("cardGroupNoImages");
-
-  if (cardWithImage.style.display === "none") {
-    cardWithImage.style.display = "block";
-    cardNoImage.style.display = "none";
-    linkTitle.innerHTML = 'See these without images';
-  } else {
-    cardWithImage.style.display = "none";
-    cardNoImage.style.display = "block";
-    linkTitle.innerHTML = 'See these with images';
-  }
-  
-} 
-
-
-</script>
 {% endblock %}
