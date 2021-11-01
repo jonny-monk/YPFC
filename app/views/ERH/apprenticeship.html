@@ -38,7 +38,6 @@ Apprenticeship
 {% endblock %}
 
 {% block content %}
-
 </div>
 
 <div class="govuk-grid-row page-title-header choice-header  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
@@ -53,8 +52,23 @@ Apprenticeship
 
     </div>
     <div class="govuk-grid-column-one-third">
-           <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-    </div>
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-top-2">
+<form action="https://www.apprenticeships.gov.uk/apprentices/create-account">
+  {{ govukButton({
+    text: "Register for an apprenticeship"
+  }) }}
+</form>
+
+<form action="https://www.apprenticeships.gov.uk/apprentices">
+  {{ govukButton({
+    text: "Visit the apprenticeship website",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
+ </div>
   </div>
     </div>
   
