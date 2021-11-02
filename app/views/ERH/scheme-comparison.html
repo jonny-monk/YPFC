@@ -89,51 +89,84 @@ Why are government schemes of interest to you?
      {% if data['schemes'] | includes('alevels') %}
 <tr class="govuk-table__row nhsuk-table__row">
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Scheme</span>
+    <span class="nhsuk-table-responsive__heading">Qualification</span>
              <a href="schemes/kickstart"> A-levels </a>       
   </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Cost</span>
-      No costs
-  </td>
+    <span class="nhsuk-table-responsive__heading">Description</span>
+    An academic qualification similar in style to GCSEs, that prepares you for further study </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Benefits</span>
-    Support young people to gain valuable experience and give them opportunities to start a new career in your industry
-  </td>
+    <span class="nhsuk-table-responsive__heading">Length of time</span>
+    2 years  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Time</span>
-      6-months
-  </td>
+    <span class="nhsuk-table-responsive__heading">Assessment</span>
+    Mostly exams at the end of the course  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Financialincentives</span>
-    Yes
+    <span class="nhsuk-table-responsive__heading">Level</span>
+    3
   </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Awards Ucas points?</span>
+    Yes  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Entry requirements</span>
+    For individual schools and colleges to decide (commonly 5 GCSEs at grades 4 and above)</td>
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Work experience</span>
+    No  </td>  
+  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">What does it lead to?</span>
+    <ul>
+    <li>Apprenticeship</li>
+    <li>University or college</li>
+    <li>Work</li>
+    </ul>
+  </td>
 </tr>
 {% endif %}
 
  {# Traineeships  #}
-     {% if data['schemes'] | includes('traineeships') %}
+     {% if data['schemes'] | includes('traineeship') %}
 <tr class="govuk-table__row nhsuk-table__row">
   <td class="govuk-table__cell nhsuk-table__cell">
     <span class="nhsuk-table-responsive__heading">Scheme</span>
              <a href="schemes/traineeships"> Traineeships </a>       
   </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Cost</span>
-      No cost but some employers choose to cover living expenses
-  </td>
+    <span class="nhsuk-table-responsive__heading">Description</span>
+    A work‑focused study programme that prepares you for an apprenticeship or work  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Benefits</span>
-   Helps you increase your capacity and productivity whilst developing a loyal and talented workforce
-  </td>
+    <span class="nhsuk-table-responsive__heading">Length of time</span>
+   6 weeks to 1 year, but most will be under 6 months </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Time</span>
-      6-weeks to 12 months
-  </td>
+    <span class="nhsuk-table-responsive__heading">Assessment</span>
+    Your employer should offer an interview for an apprenticeship or job if available, or an exit interview with written feedback  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Financialincentives</span>
-    Yes
+    <span class="nhsuk-table-responsive__heading">Level</span>
+    N/A  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Awards Ucas points?</span>
+    No  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Entry requirements</span>
+    You can apply of you have little or no work experience but are:
+    <ul>
+    <li>motivated to work</li>
+    <li>aged 16 to 24 (or 25 with an EHC plan)</li>
+    <li>qualified up to level 3</li>
+    <ul>
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Work experience</span>
+    Yes (minimum of 70 hours)  </td>  
   </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">What does it lead to?</span>
+    <ul>
+    <li>Apprenticeship</li>
+    <li>Work</li>
+    </ul>
+  </td> 
 </tr>
 {% endif %}
 
@@ -141,25 +174,39 @@ Why are government schemes of interest to you?
      {% if data['schemes'] | includes('tlevels') %}
 <tr class="govuk-table__row nhsuk-table__row">
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Scheme</span>
+    <span class="nhsuk-table-responsive__heading">Qualification</span>
              <a href="schemes/tlevels"> T Levels: Industry Placements </a>       
   </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Cost</span>
-      No cost but some employers choose to cover living expenses
-  </td>
+    <span class="nhsuk-table-responsive__heading">Description</span>
+    A technical study course, equivalent to 3 A levels, with an industry placement that makes up 20% of the course. T levels are designed to give you the skills that employers need  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Benefits</span>
-   A learner spends 9 weeks with you at no cost
-  </td>
+    <span class="nhsuk-table-responsive__heading">Length of time</span>
+   2 years </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Time</span>
-      Short term 45-day industry placement
-  </td>
+    <span class="nhsuk-table-responsive__heading">Assessment</span>
+    Exams, projects and practical assignments</td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Financialincentives</span>
-    Yes
+    <span class="nhsuk-table-responsive__heading">Level</span>
+    3  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Awards Ucas points?</span>
+    Yes  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Entry requirements</span>
+    Set by each school/college
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Work experience</span>
+    Yes (80% classroom, 20% work)  </td>  
   </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">What does it lead to?</span>
+    <ul>
+    <li>Apprenticeship</li>
+    <li>University or college</li>
+    <li>Work</li>
+    </ul>
+  </td> 
 </tr>
 {% endif %}
 
@@ -168,24 +215,38 @@ Why are government schemes of interest to you?
      {% if data['schemes'] | includes('vtqs') %}
 <tr class="govuk-table__row nhsuk-table__row">
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Scheme</span>
+    <span class="nhsuk-table-responsive__heading">Qualification</span>
              <a href="schemes/swap"> Vocational Technical Qualifications (VTQs) </a>       
   </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Cost</span>
-     No cost, SWAP placements are entirely government-funded
-  </td>
+    <span class="nhsuk-table-responsive__heading">Description</span>
+    Qualifications which teach you how to do tasks specifically related to the industry and role you want to be in  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Benefits</span>
-  Helps you recruit or train staff through fully-funded pre-employment training
-  </td>
+    <span class="nhsuk-table-responsive__heading">Length of time</span>
+   Course dependent </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Time</span>
-      6-weeks
-  </td>
+    <span class="nhsuk-table-responsive__heading">Assessment</span>
+    Depends on the course but may include coursework and/or exams</td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Financialincentives</span>
-    No
+    <span class="nhsuk-table-responsive__heading">Level</span>
+    1+  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Awards Ucas points?</span>
+    Some – depends on the course and awarding organisation  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Entry requirements</span>
+    Course dependent
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Work experience</span>
+    Course dependent </td>  
+  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">What does it lead to?</span>
+    <ul>
+    <li>Apprenticeship</li>
+    <li>University or college</li>
+    <li>Work</li>
+    </ul>
   </td>  
 </tr>
 {% endif %}
@@ -195,24 +256,38 @@ Why are government schemes of interest to you?
      {% if data['schemes'] | includes('supportedinternship') %}
 <tr class="govuk-table__row nhsuk-table__row">
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Scheme</span>
+    <span class="nhsuk-table-responsive__heading">Qualification</span>
              <a href="schemes/supportedinternship"> Supported Internships for learners with additional needs </a>       
   </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Cost</span>
-     No costs
-  </td>
+    <span class="nhsuk-table-responsive__heading">Description</span>
+     Allows you to shape a job role that suits your business and the needs of the supported intern and increases your confidence of employing individuals with additional needs  </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Benefits</span>
-  Allows you to shape a job role that suits your business and the needs of the supported intern and increases your confidence of employing individuals with additional needs
-  </td>
+    <span class="nhsuk-table-responsive__heading">Length of time</span>
+   6 to 12-months </td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Time</span>
-      6 to 12-months
-  </td>
+    <span class="nhsuk-table-responsive__heading">Assessment</span>
+    ???</td>
   <td class="govuk-table__cell nhsuk-table__cell">
-    <span class="nhsuk-table-responsive__heading">Financialincentives</span>
-    No
+    <span class="nhsuk-table-responsive__heading">Level</span>
+    ???  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Awards Ucas points?</span>
+    ???  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Entry requirements</span>
+    ???
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">Work experience</span>
+    ??? </td>  
+  </td>  
+  <td class="govuk-table__cell nhsuk-table__cell">
+    <span class="nhsuk-table-responsive__heading">What does it lead to?</span>
+    <ul>
+    <li>???</li>
+    <li>???</li>
+    <li>???</li>
+    </ul>
   </td>  
   
 </tr>
