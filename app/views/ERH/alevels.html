@@ -21,7 +21,7 @@ A-Levels
        <a href="apprenticeship">Apprenticeship</a>
      </li>
      <li>
-       <a href="supportedinternship">Supported Internships</a>
+       <a href="supportedinternship">Supported Internship</a>
      </li>
      <li>
        <a href="tlevels">T-Levels</a>
@@ -30,7 +30,7 @@ A-Levels
       <a href="traineeship">Traineeship</a>
      </li>
      <li>
-      <a href="vtq">VTQ</a>
+      <a href="vtq">VTQs</a>
      </li>
  </ul> 
 </nav>
@@ -38,30 +38,236 @@ A-Levels
 {% endblock %}
 
 {% block content %}
-
 </div>
 
 <div class="govuk-grid-row page-title-header choice-header  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
   <div class="govuk-width-container">
     <div class="govuk-grid-column-two-thirds">
-      <h2 id="alevels" class="govuk-heading-l choice-title">
+      <h2 id="apprenticeship" class="govuk-heading-l choice-title">
         A-Levels
       </h2>
+   <p class="govuk-body choice-body">[Placeholder text]</p>
+ <p class="govuk-body choice-body"> [Placeholder text] </p>
+ <p class="govuk-body choice-body"> [Placeholder text]</p>
+
     </div>
-    <div class="govuk-grid-column-one-third">
-           <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
-    </div>
+
+<div class="govuk-grid-column-one-third">
+<form action="https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=A%20levels&distance=5%20miles&town=&orderByValue=Relevance&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=">
+{{ govukButton({
+  text: "Find a course"
+}) }}  
+ </div>
   </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
 <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third sticky">
+<h2 class="govuk-heading-m"> Contents </h2> 
+<ul class="govuk-list govuk-body-s content-list">
+  <li>
+   <a class="govuk-link--no-visited-state" href="#cost"> How much do A-Levels cost </a>
+  </li>
+  <li>
+     <a class="govuk-link--no-visited-state" href="#who"> Who can apply for A-Levels </a>
+  </li>
+  <li>
+    <a class="govuk-link--no-visited-state" href="#include"> What does A-Levels include </a>
+  </li>
+   <li>
+    <a class="govuk-link--no-visited-state" href="#pay">  Pay and working hours </a>
+  </li>
+    <li>
+  <a class="govuk-link--no-visited-state" href="#how">  How to apply for A-Levels</a>
+  </li>
+   <li>
+  <a class="govuk-link--no-visited-state" href="#help">  Get help and advice</a>
+  </li>
+   <li>
+  <a class="govuk-link--no-visited-state" href="#realstories"> Real stories</a>
+  </li>
+
+ 
+</ul>
+
+<div style="width:100%;  height: 50px;  margin: 0 auto; 
+    padding: 0; max-width: 1024px; padding-top: 20px;"  class="app-back-to-contents">
+    <a style class="govuk-link" href="#top"><svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+    </svg> Back to top </a>
+    </div>
+
+
+</div>
+
+{# cost #}
 <div class="govuk-grid-column-two-thirds">
+<div id="cost" class="section_container">
   <h2 class="govuk-heading-m"> 
-  Placeholder page
+  How much do A-Levels cost
   </h2>
-  <p>Content about a-levels will be here. </p>
+  <p>Apprenticeships are free. The employer and training provider determine their costs together with government support. </p>
+  <p> If you’re under 25 when you start your apprenticeship and have previously been in local authority care, you may be eligible for a bursary payment. </p>
+</div>
+
+{# who #}
+<div id="who" class="section_container">
+ <h2 class="govuk-heading-m"> 
+  Who can apply for A-Levels
+ </h2> 
+  <p> To start A-Levels, you’ll need to be: </p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      16 or over
+    </li>
+    <li>
+    living in England
+    </li>
+    <li>
+     not in full-time education
+    </li>
+  </ul>
+  <p> You can apply for A-Levels while you’re still at school but you’ll need to be 16 or over by the end of the summer holidays to start the apprenticeship. </p>
+</div>
+
+{# include #}
+<div id="include" class="section_container">
+ <h2 class="govuk-heading-m "> 
+  What does A-Levels include
+  </h2>
+  <p>As an apprentice you will:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      be an employee earning a wage and getting holiday pay
+    </li>
+    <li>
+      work alongside experienced staff
+    </li>
+    <li>
+     gain job-specific skills
+    </li>
+    <li>
+    get time for training and study related to your role
+    </li>
+  </ul>
+
+  <p>As an apprentice, at least 20% of your normal working hours must be spent on training.
+Your training might happen every week, every month or in a separate block of time.
+ </p>
+
+ <p> The training might take place:</p>
+ <ul class="govuk-list govuk-list--bullet">
+   <li>
+     at your place of work
+   </li>
+   <li>
+     somewhere else like at a college or training provider
+   </li>
+   <li>
+    online
+   </li>
+ </ul>
+ </div>
+
+ {# pay #}
+<div id="pay" class="section_container">
+<h2 class="govuk-heading-m "> 
+  Pay and working hours
+  </h2>
+<p> There are different rates of pay for apprentices depending on your age and what year of your apprenticeship you’re in. </p>
+<p> Your employment contract should confirm your rate of pay but you must be paid the appropriate <a target="_blank" href="https://www.gov.uk/national-minimum-wage-rates"> national minimum wage (opens in a new tab)</a>. </p>
+<p> You must be paid for: </p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>
+    your normal working hours (found in your employment contract or apprenticeship agreement)
+  </li>
+  <li>
+    training that’s part of your apprenticeship (at least 20% of your normal working hours)
+  </li>
+  <li>
+    study towards English and maths qualifications, if they’re part of your apprenticeship
+  </li>
+</ul>
+<p> There are rules about how many hours you can work in a week and being paid overtime. </p>
+<p> You’ll get at least 20 days of paid holiday per year, plus bank holidays. The <a target="_blank" href="https://www.gov.uk/calculate-your-holiday-entitlement">holiday calculator (opens in a new tab)</a> helps you check what you are allowed to take. </p>
+</div>
+
+{# how #}
+<section class="grey-box"> 
+  <h2 class="govuk-heading-m "> 
+  How to apply for A-Levels
+    </h2>
+    <p> There are 3 steps to applying for A-Levels. </p>
+    <ul class="govuk-list govuk-list--number">
+      <li>
+        <a target="_blank" href="https://www.gov.uk/apply-apprenticeship"> Search for A-Levels (opens in a new tab) </a>
+      </li>
+      <li>
+        Sign in or create an account.
+      </li>
+      <li>
+        Complete and submit your application.
+      </li>
+    </ul>
+</section>
+
+{# unsuccessful #}
+<div id="unsuccessful" class="section_container">
+<h3 class="govuk-heading-s"> 
+What to do if your apprenticeship application is unsuccessful
+  </h3>
+
+  <p> You can ask for feedback if you do not get selected for an interview or for the apprenticeship. </p>
+  <p>You can complain if you think you were not successful because you were discriminated against, or your treatment in the interview or application process was unfair. </p>
+  <p> Contact Acas for free and confidential advice on your rights at work.
+Contact the Support Service for Apprentices for mental health support and advice. </p>
+
+{# help #}
+<div id="help" class="section_container">
+<h2 class="govuk-heading-m "> 
+Get help and advice
+  </h2>
+
+  <p> Your school, college or training provider may be able to give you advice about apprenticeships. </p>
+
+  <p> The <a target="_blank" href="https://nationalcareers.service.gov.uk/"> National Careers Service (opens in a new tab) </a> has advice on writing applications and what to do at interviews. </p>
+
+  <p> You can call the Apprenticeship helpline if you were made redundant from your last apprenticeship and you can also talk to your training provider. </p>
+
+</div>
+
+<p> <strong> Apprenticeship helpline </strong> <br>
+nationalhelpdesk@apprenticeships.gov.uk <br> 
+Telephone: 0800 015 0400 <br>
+8am to 10pm, 7 days a week </p>
+</div>
+
+{# real stories #}
+<div id="realstories" class="section_container">
+
+<h2 class="govuk-heading-m"> 
+Real experiences
+  </h2>
+
+  <h3 class="govuk-heading-s"> Alim - Channel 4 Apprentice</h3> 
+  <p> "Being an apprentice has been the best time of my life, I've been able to do things that I'm passionate about. I've been able to meet so many different people. I've built up my confidence. It's been the best experience it could have been." </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/guS6tQwU-tY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
+  
+  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Hosanna - Royal Opera House Apprentice</h3> 
+  <p>"I found the confidence I needed to take the apprenticeship, because I knew theatre is what I loved and where I wanted to be.There's never really a typical day. There's always different working hours and different people, which is my favourite part of it." </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5qnghDBPLHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Ella - Robert Welch Apprentice</h3> 
+  <p> "I wasn't a hundred percent sure what I wanted to do after 6th form. Then, my mum showed me an ad in the local paper for A-Levels. I want to be earning six figures by the time I'm thirty. And that's the beauty of starting young, it's all possible." </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s0fcP0QgtGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
 </div>
 </div>
 
@@ -72,15 +278,16 @@ A-Levels
      <h2 class="govuk-heading-l govuk-!-padding-top-9"> Other options </h2> 
     </div>
   </div>
-<p class="govuk-body govuk-!-padding-bottom-3">
-<a class="govuk-link" href="compare"> Compare all options in a table </a>
+  <p class="govuk-body govuk-!-padding-bottom-3">
+<a class="govuk-link" href="which-schemes"> Compare all options in a table </a>
 </p>
   <div class="govuk-grid-row">
-        {# A-LEVELS CARD #}
+        
+ {# A-LEVELS CARD #}
   <div class="govuk-grid-column-one-third">
-    <div class="card active">
+    <div class="card">
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-      <h3 class="govuk-heading-s">A-Levels</h3>
+      <h3 class="govuk-heading-s"><a href="alevels">A-Levels</a></h3>
       <div class="text">
        <p>Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
       </div>
@@ -90,9 +297,9 @@ A-Levels
 {# APPRENTICESHIP CARD #}
 
   <div class="govuk-grid-column-one-third">
-    <div class="card">
+    <div class="card active">
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
+      <h3 class="govuk-heading-s">Apprenticeship</h3>
       <div class="text">
         <p>Apprenticeships are for those aged 16 or over and combine working with studying to gain skills and knowledge in a specific job.<br><br></p> 
       </div>
@@ -148,9 +355,9 @@ A-Levels
 <div class="govuk-grid-column-one-third">
     <div class="card">
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (Vocational Technical Qualifications (VTQs))</a></h3>
+      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
       <div class="text">
-        <p>Vocational qualifications are work-related qualifications available in a wide range of career areas </p> 
+        <p>Vocational qualifications are work-related qualifications available in a wide range of career areas.</p> 
       </div>
     </div>
   </div>
@@ -165,3 +372,63 @@ A-Levels
 
 
 {% endblock %}
+
+{% block pageScripts %}
+    <script>
+              $(document).ready(function(){
+          // $sections incleudes all of the container divs that relate to menu items.
+          var $sections = $('.section_container');
+          
+          // The user scrolls
+          $(window).scroll(function(){
+            
+            // currentScroll is the number of pixels the window has been scrolled
+            var currentScroll = $(this).scrollTop() + 100 ;
+            
+            // $currentSection is somewhere to place the section we must be looking at
+            var $currentSection
+            
+            // We check the position of each of the divs compared to the windows scroll positon
+            $sections.each(function(){
+              // divPosition is the position down the page in px of the current section we are testing      
+              var divPosition = $(this).offset().top;
+              
+              // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
+              // the -1 is so that it includes the div 1px before the div leave the top of the window.
+              if( divPosition - 1 < currentScroll ){
+                // We have either read the section or are currently reading the section so we'll call it our current section
+                $currentSection = $(this);
+                
+                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
+              }
+              
+              // This is the bit of code that uses the currentSection as its source of ID
+              var id = $currentSection.attr('id');
+            $('a').removeClass('active-content');
+            $("[href=#"+id+"]").addClass('active-content');
+              
+            })
+
+          });
+        });
+
+
+
+  $(document).scroll(function() {
+
+	var $windowHeight =  $(window).height();
+	 var $documentHeight = $(document).height();
+	 var $scrollTop = $(window).scrollTop();
+
+ if($scrollTop + $windowHeight > $documentHeight - 1300 || $scrollTop < 400 ) {
+   $('.app-back-to-contents').hide();
+ }
+ else {
+   $('.app-back-to-contents').show();
+ }
+});
+    </script>
+
+
+
+  {% endblock %}
