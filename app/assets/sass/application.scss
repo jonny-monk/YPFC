@@ -254,7 +254,7 @@ nav {
 		}
 
 
-  * {
+  p {
     color: #ffffff;
   }
 
@@ -267,14 +267,14 @@ nav {
     color: black;
   }
 
-  button {
-    background-color: black;
+  // button {
+  //   background-color: black;
 
-    &:hover {
-      background-color: black;
-      text-decoration: underline;
-    }
-  }
+  //   &:hover {
+  //     background-color: black;
+  //     text-decoration: underline;
+  //   }
+  // }
   .govuk-heading-xl {
     margin: 0 0 30px 0;
     color: #FFFFFF;

@@ -1,12 +1,16 @@
 
 {% extends "layout_ncs_erh.html" %}
 
+{% block header %}
+
+{% endblock %}
+
 {% block pageTitle %}
  Post-18 choices
 {% endblock %}
 
-{% block content %}
-
+{% block beforeContent %}
+</div>
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
@@ -17,40 +21,22 @@
     </div>
   </div>
 
+<div class = "ec-hero">
+    <div class="govuk-width-container">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
         Choices at age 18+        
       </h1>
-      {# <p>
-        You must stay in some type of education or training until you are 18. There are many choices available when you turn 16, look at what option best suits you and your situation, strengths and interests.
-      </p>
-      <p>
-      You can leave school on the last Friday in June if you'll be 16 by the end of the summer holidays.
-      </p>
-      <p>
-      You must then do one of the following until you're 18:
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          stay in full-time education, for example at school, sixth form college of further education college
-        </li>
-        <li>
-          start an apprenticeship or traineeship
-        </li>
-        <li>
-          spend 20 hours or more a week working or volunteering while also doing part-time education or training
-        </li>
-      </ul>
-      </p>
-      <p>
-        Your local authority has a duty to make sure you are offered a suitable place by the end of September. Contact your local Authority for information on who can help you find a suitable offer.
-
-      </p> #}
-
-    
-    </div>
-    
+    </div> 
   </div>
+  </div> 
+  </div>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
 
   <div id="choices" class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
@@ -211,6 +197,7 @@
 
 </div>
 
+</div>
 <section>
   <div class="secondary-hero" style="background-color: rgba(210, 226, 241, 0.3); ">
     <div class="govuk-width-container">
@@ -225,6 +212,8 @@
     </div>
   </div>
 </section>
+
+  <div class="govuk-width-container">
 
  <aside class="app-related-items govuk-!-margin-top-6" role="complementary">
           <h2 class="govuk-heading-m" id="subsection-title">
@@ -246,7 +235,7 @@
 
 </div>
 
-
+</div>
 
 {% endblock %}
 
