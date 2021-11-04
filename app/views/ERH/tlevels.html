@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_ncs_erh.html" %}
 
 {% block pageTitle %}
 T-Levels
@@ -8,7 +8,7 @@ T-Levels
 {% block beforeContent %} {{ super() }}
 
 {{ govukBackLink ({
-        text: 'Back to post-16 options',
+        text: 'Back to post-16 choices',
         href: 'gcse'
     }) }}
 
@@ -41,7 +41,7 @@ T-Levels
 
 </div>
 
-<div class="govuk-grid-row page-title-header choice-header  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
+<div class="govuk-grid-row page-title-header ec-hero  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
   <div class="govuk-width-container">
     <div class="govuk-grid-column-two-thirds">
       <h2 id="alevels" class="govuk-heading-l choice-title">
@@ -61,7 +61,7 @@ T-Levels
 {% from "govuk/components/button/macro.njk" import govukButton %}
 
 <div class="govuk-button-group govuk-!-margin-top-2">
-<form action="https://www.tlevels.gov.uk/students/find">
+<form action="https://www.figma.com/proto/zvlTcAGtJ01uKayF96i2OA/T-Levels---SOW-2?page-id=592%3A207&node-id=592%3A469&viewport=242%2C48%2C0.07&scaling=scale-down-width&starting-point-node-id=592%3A469">
   {{ govukButton({
     text: "Find a T-Level"
   }) }}
@@ -155,11 +155,11 @@ Real experiences
 
 <div id="choices" class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Other options </h2> 
+     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Other choices </h2> 
     </div>
   </div>
 <p class="govuk-body govuk-!-padding-bottom-3">
-<a class="govuk-link" href="compare"> Compare all options in a table </a>
+<a class="govuk-link" href="compare"> Compare all choices in a table </a>
 </p>
   <div class="govuk-grid-row">
         {# A-LEVELS CARD #}

@@ -1,64 +1,49 @@
 
-{% extends "layout.html" %}
+{% extends "layout_ncs_erh.html" %}
 
-{% block pageTitle %}
- Post-18 options
+{% block header %}
+
 {% endblock %}
 
-{% block content %}
+{% block pageTitle %}
+ Post-18 choices
+{% endblock %}
 
+{% block beforeContent %}
+</div>
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
                 <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">[Untitled]</a> </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">Options at age 18+</li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">choices at age 18+</li>
       </ol>
     </div>
   </div>
 
+<div class = "ec-hero">
+    <div class="govuk-width-container">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Options at age 18+        
+        Choices at age 18+        
       </h1>
-      {# <p>
-        You must stay in some type of education or training until you are 18. There are many options available when you turn 16, look at what option best suits you and your situation, strengths and interests.
-      </p>
-      <p>
-      You can leave school on the last Friday in June if you'll be 16 by the end of the summer holidays.
-      </p>
-      <p>
-      You must then do one of the following until you're 18:
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          stay in full-time education, for example at school, sixth form college of further education college
-        </li>
-        <li>
-          start an apprenticeship or traineeship
-        </li>
-        <li>
-          spend 20 hours or more a week working or volunteering while also doing part-time education or training
-        </li>
-      </ul>
-      </p>
-      <p>
-        Your local authority has a duty to make sure you are offered a suitable place by the end of September. Contact your local Authority for information on who can help you find a suitable offer.
-
-      </p> #}
-
-    
-    </div>
-    
+    </div> 
   </div>
+  </div> 
+  </div>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
 
   <div id="choices" class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-     {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> Options </h2>  #}
+     {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
     </div>
   </div>
-<p class="govuk-body govuk-!-padding-bottom-3">
-<a class="govuk-link" href="which-schemes"> Compare all options in a table </a>
+<p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3"><a class="govuk-link" href="which-schemes"> Compare all choices in a table </a>
 </p>
   <div class="govuk-grid-row">
  {# HIGHER EDUCATION CARD #}
@@ -105,7 +90,7 @@
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
       <h3 class="govuk-heading-s"><a href="tlevels">School Leavers Schemes</a></h3>
       <div class="text">
-        <p>T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. They are a 2-year qualification and the equivalent to 3 A levels.</p> 
+        <p>T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. </p> 
       </div>
     </div>
   </div>
@@ -119,7 +104,7 @@
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1589923188900-85dae523342b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
       <h3 class="govuk-heading-s"><a href="traineeship">1 year funded course for ages 18-19</a></h3>
       <div class="text">
-        <p>A traineeship is a skills development programme that includes a work placement that can last up to 1 year.
+        <p>A traineeship is a skills development programme that includes a work placement.
 </p> 
       </div>
     </div>
@@ -211,31 +196,31 @@
 
 </div>
 
-<div class="govuk-grid-column-one-third" style="float:right">
-         <aside class="app-related-items" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Speak to an adviser
-          </h2>
-          <ul class="govuk-list">
-            <li>
-             <strong> Call </strong> 0800 100 900 or <a href="#"> use webchat </a>
-            </li>
-            <li>
-              8am - 8pm Monday - Friday
-            </li>
-            <li>
-              10am - 5pm Saturday 
-            </li>
-          </ul>
-            
-        </aside>
-         <aside class="app-related-items" role="complementary" style="float:right">
+</div>
+<section>
+  <div class="secondary-hero" style="background-color: rgba(210, 226, 241, 0.3); ">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
+        <div class="govuk-grid-column-two-third">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
+          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold"><a href="tel:0800 100 900">0800 100 900</a></span> (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or <a class="govuk-link" href="#" rel="external" onclick="event.preventDefault(); window.botmanChatWidget.open(); return false; " target="'_blank'">
+                        use webchat
+                    </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="govuk-width-container">
+
+ <aside class="app-related-items govuk-!-margin-top-6" role="complementary">
           <h2 class="govuk-heading-m" id="subsection-title">
             Other opportunities
           </h2>
           <ul class="govuk-list">
             <li>
-              You could look at what <a href="">work and study options</a> will be available to you at 18
+              You could look at what <a href="">work and study choices</a> will be available to you at 18
             </li>
             <li>
               You could also consider <a href="">volunteering</a> to strengthen your job and study opportunities
@@ -243,14 +228,13 @@
           </ul>                  
         </aside>
     </div> 
-
    
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
 </div>
 
-
+</div>
 
 {% endblock %}
 
