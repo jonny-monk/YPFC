@@ -7,33 +7,17 @@ Apprenticeship
 
 {% block beforeContent %} {{ super() }}
 
-{{ govukBackLink ({
-        text: 'Back to post-16 choices',
-        href: 'gcse'
-    }) }}
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
+                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">[Untitled]</a> </li>
+                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="gcse">Choices at age 16+</a> </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Apprenticeship</li>
+      </ol>
+    </div>
+  </div>
 
-<nav class="govuk-body-s">
-   <ul class="nav-list">
-     <li>
-      <a href="alevels">A-Levels</a>
-     </li>
-     <li>
-       Apprenticeship
-     </li>
-     <li>
-       <a href="supportedinternship">Supported Internship</a>
-     </li>
-     <li>
-       <a href="tlevels">T-Levels</a>
-     </li>
-     <li>
-      <a href="traineeship">Traineeship</a>
-     </li>
-     <li>
-      <a href="vtq">VTQs</a>
-     </li>
- </ul> 
-</nav>
 
 {% endblock %}
 
@@ -76,43 +60,9 @@ Apprenticeship
     <div class="govuk-width-container govuk-!-padding-top-5">
 <div class="govuk-grid-row">
 
-<div class="govuk-grid-column-one-third sticky">
-<h2 class="govuk-heading-m"> Contents </h2> 
-<ul class="govuk-list govuk-body-s content-list">
-  <li>
-   <a class="govuk-link--no-visited-state" href="#cost"> How much does an apprenticeship cost </a>
-  </li>
-  <li>
-     <a class="govuk-link--no-visited-state" href="#who"> Who can apply for an apprenticeship </a>
-  </li>
-  <li>
-    <a class="govuk-link--no-visited-state" href="#include"> What does an apprenticeship include </a>
-  </li>
-   <li>
-    <a class="govuk-link--no-visited-state" href="#pay">  Pay and working hours </a>
-  </li>
-    <li>
-  <a class="govuk-link--no-visited-state" href="#how">  How to apply for an apprenticeship</a>
-  </li>
-   <li>
-  <a class="govuk-link--no-visited-state" href="#help">  Get help and advice</a>
-  </li>
-   <li>
-  <a class="govuk-link--no-visited-state" href="#realstories"> Real stories</a>
-  </li>
-
- 
-</ul>
-
-<div style="width:100%;  height: 50px;  margin: 0 auto; 
-    padding: 0; max-width: 1024px; padding-top: 20px;"  class="app-back-to-contents">
-    <a style class="govuk-link" href="#top"><svg role="presentation" focusable="false" class="app-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
-      <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
-    </svg> Back to top </a>
-    </div>
 
 
-</div>
+
 
 {# cost #}
 <div class="govuk-grid-column-two-thirds">
@@ -277,104 +227,54 @@ Real experiences
   <h3 class="govuk-heading-s govuk-!-padding-top-6"> Ella - Robert Welch Apprentice</h3> 
   <p> "I wasn't a hundred percent sure what I wanted to do after 6th form. Then, my mum showed me an ad in the local paper for an apprenticeship. I want to be earning six figures by the time I'm thirty. And that's the beauty of starting young, it's all possible." </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s0fcP0QgtGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</div>
-</div>
-</div>
-
-<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-<div id="choices" class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-     <h2 class="govuk-heading-l govuk-!-padding-top-9"> Other choices </h2> 
-    </div>
-  </div>
-  <p class="govuk-body govuk-!-padding-bottom-3">
-<a class="govuk-link" href="which-schemes"> Compare all choices in a table </a>
-</p>
-  <div class="govuk-grid-row">
-        
- {# A-LEVELS CARD #}
-  <div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-      <h3 class="govuk-heading-s"><a href="alevels">A-Levels</a></h3>
-      <div class="text">
-       <p>Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
-      </div>
-    </div>
-  </div>
-
-{# APPRENTICESHIP CARD #}
-
-  <div class="govuk-grid-column-one-third">
-    <div class="card active">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s">Apprenticeship</h3>
-      <div class="text">
-        <p>Apprenticeships are for those aged 16 or over and combine working with studying to gain skills and knowledge in a specific job.<br><br></p> 
-      </div>
-    </div>
-  </div>
-
-{# SUPPORTED INTERNSHIP CARD  #}
-
-  <div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internship</a></h3>
-      <div class="text">
-        <p>Supported internships allow young people aged 16 to 24 with an Education, Health and Care plan (EHC), who need extra support to move into employment.</p> 
-      </div>
-    </div>
-  </div>
-  </div>
-    
-{# T-LEVELS CARD  #}
-  <div class="govuk-grid-row">
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="tlevels">T-Levels</a></h3>
-      <div class="text">
-        <p>T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. They are a 2-year qualification and the equivalent to 3 A levels.</p> 
-      </div>
-    </div>
-  </div>
+<iframe class="govuk-!-margin-bottom-6" width="560" height="315" src="https://www.youtube.com/embed/s0fcP0QgtGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-        
-{# TRAINEESHIP CARD  #}
-
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
-      <div class="text">
-        <p>A traineeship is a skills development programme that includes a work placement that can last from 6 weeks up to 1 year.
-</p> 
-      </div>
-    </div>
-  </div>
-
-    
-{# Vocational Technical Qualifications (VTQs) CARD  #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
-      <div class="text">
-        <p>Vocational qualifications are work-related qualifications available in a wide range of career areas.</p> 
-      </div>
-    </div>
-  </div>
 
 </div>
+
+</div>
+   <div class="govuk-grid-column-one-third">
+         <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            All choices at age 16+
+          </h2>
+            <ul>
+     <li>
+      <a href="alevels">A-Levels</a>
+     </li>
+     <li>
+       Apprenticeship
+     </li>
+     <li>
+       <a href="supportedinternship">Supported Internship</a>
+     </li>
+     <li>
+       <a href="tlevels">T-Levels</a>
+     </li>
+     <li>
+      <a href="traineeship">Traineeship</a>
+     </li>
+     <li>
+      <a href="vtq">VTQs</a>
+     </li>
+     
+ </ul>                  
+        </aside>
+    </div> 
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
 
 </div>
 
@@ -385,62 +285,3 @@ Real experiences
 
 {% endblock %}
 
-{% block pageScripts %}
-    <script>
-              $(document).ready(function(){
-          // $sections incleudes all of the container divs that relate to menu items.
-          var $sections = $('.section_container');
-          
-          // The user scrolls
-          $(window).scroll(function(){
-            
-            // currentScroll is the number of pixels the window has been scrolled
-            var currentScroll = $(this).scrollTop() + 100 ;
-            
-            // $currentSection is somewhere to place the section we must be looking at
-            var $currentSection
-            
-            // We check the position of each of the divs compared to the windows scroll positon
-            $sections.each(function(){
-              // divPosition is the position down the page in px of the current section we are testing      
-              var divPosition = $(this).offset().top;
-              
-              // If the divPosition is less the the currentScroll position the div we are testing has moved above the window edge.
-              // the -1 is so that it includes the div 1px before the div leave the top of the window.
-              if( divPosition - 1 < currentScroll ){
-                // We have either read the section or are currently reading the section so we'll call it our current section
-                $currentSection = $(this);
-                
-                // If the next div has also been read or we are currently reading it we will overwrite this value again. This will leave us with the LAST div that passed.
-              }
-              
-              // This is the bit of code that uses the currentSection as its source of ID
-              var id = $currentSection.attr('id');
-            $('a').removeClass('active-content');
-            $("[href=#"+id+"]").addClass('active-content');
-              
-            })
-
-          });
-        });
-
-
-
-  $(document).scroll(function() {
-
-	var $windowHeight =  $(window).height();
-	 var $documentHeight = $(document).height();
-	 var $scrollTop = $(window).scrollTop();
-
- if($scrollTop + $windowHeight > $documentHeight - 1300 || $scrollTop < 400 ) {
-   $('.app-back-to-contents').hide();
- }
- else {
-   $('.app-back-to-contents').show();
- }
-});
-    </script>
-
-
-
-  {% endblock %}
