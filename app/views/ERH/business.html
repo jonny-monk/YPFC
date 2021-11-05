@@ -39,15 +39,31 @@ Start a business
       </p>      
     </div>
     </div>
+    </div>
 
-<div class="govuk-grid-column-one-third">
-<form action="https://www.gov.uk/guidance/htqs">
-{{ govukButton({
-  text: "Start a business"
-}) }}  
+<div class="govuk-grid-row page-title-header ec-hero sticky"> 
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-6">
+<form action="paste URL">
+  {{ govukButton({
+    text: "Find a course"
+  }) }}
+</form>
+
+<form action="paste URL">
+  {{ govukButton({
+    text: "More information",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
  </div>
-  
   </div>
+    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">

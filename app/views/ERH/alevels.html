@@ -34,14 +34,27 @@ A-Levels
  <p class="govuk-body choice-body"> [Placeholder text]</p>
 
     </div>
+</div>
+ </div>
 
-<div class="govuk-grid-column-one-third">
-<form action="https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=A%20levels&distance=5%20miles&town=&orderByValue=Relevance&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=">
-{{ govukButton({
-  text: "Find a course"
-}) }}  
+<div class="govuk-grid-row page-title-header ec-hero sticky"> 
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-6">
+<form action="https://nationalcareers.service.gov.uk/find-a-course/page?">
+  {{ govukButton({
+    text: "Find a course"
+  }) }}
+</form>
+
+
+</div>   
  </div>
   </div>
+    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
