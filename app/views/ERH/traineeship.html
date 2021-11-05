@@ -23,7 +23,7 @@ Traineeship
 
 </div>
 
-<div class="govuk-grid-row page-title-header ec-hero  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
+<div class="govuk-grid-row page-title-header ec-hero"> 
   <div class="govuk-width-container">
     <div class="govuk-grid-column-two-thirds">
       <h2 id="traineeship" class="govuk-heading-l choice-title">
@@ -37,10 +37,16 @@ Traineeship
        </p>
     </div>
 
-<div class="govuk-grid-column-one-third">
+</div>
+ </div>
+
+<div class="govuk-grid-row page-title-header ec-hero sticky"> 
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
 {% from "govuk/components/button/macro.njk" import govukButton %}
 
-<div class="govuk-button-group govuk-!-margin-top-2">
+<div class="govuk-button-group govuk-!-margin-left-6">
 <form action="https://www.findapprenticeship.service.gov.uk/traineeshipsearch?_ga=2.241170627.1136579510.1635770276-84142030.1627993402">
   {{ govukButton({
     text: "Find a traineeship"
@@ -54,8 +60,9 @@ Traineeship
   }) }}
   </form>
 </div>   
- </div>    </div>
+ </div>
   </div>
+    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
@@ -198,7 +205,7 @@ Real experiences
           </h2>
             <ul>
      <li>
-      <a href="alevels">A-Levels</a>
+      <a href="alevels">A Levels</a>
      </li>
      <li>
        <a href="apprenticeship">Apprenticeship</a>

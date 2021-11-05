@@ -28,7 +28,7 @@ Higher technical skills courses (HTQs)
 
 </div>
 
-<div class="govuk-grid-row page-title-header ec-hero  govuk-!-padding-top-6 govuk-!-padding-bottom-6"> 
+<div class="govuk-grid-row page-title-header ec-hero  govuk-!-padding-top-6"> 
   <div class="govuk-width-container">
     <div class="govuk-grid-column-two-thirds">
       <h2 id="alevels" class="govuk-heading-l choice-title">
@@ -40,14 +40,25 @@ Higher technical skills courses (HTQs)
     </div>
     </div>
 
-<div class="govuk-grid-column-one-third">
+</div>
+<div class="govuk-grid-row page-title-header ec-hero sticky"> 
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-6">
 <form action="https://www.gov.uk/guidance/htqs">
-{{ govukButton({
-  text: "Find a course"
-}) }}  
+  {{ govukButton({
+    text: "Find a course"
+  }) }}
+</form>
+
+
+</div>   
  </div>
-  
   </div>
+    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
