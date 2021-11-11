@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block pageTitle %}
- Post-18 choices
+ All choices
 {% endblock %}
 
 {% block beforeContent %}
@@ -15,8 +15,7 @@
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
- 
-        <li class="govuk-breadcrumbs__list-item" aria-current="page"> All choices</li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">All choices</li>
       </ol>
     </div>
   </div>
@@ -26,8 +25,11 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-         All choices        
-      </h1>
+     Explore your education and training choices      
+     </h1>
+     <p class="govuk-body choice-body">
+     There are lots of work and study choices available to you. You might be able to start an apprenticeship, find a course or take your first steps into the workplace.
+     </p>
     </div> 
   </div>
   </div> 
@@ -45,19 +47,69 @@
   </div>
 {# <p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3"><a class="govuk-link" href="which-schemes"> Compare all choices in a table </a>
 </p> #}
+
+
   <div class="govuk-grid-row govuk-!-margin-top-5">
  
  {# HIGHER EDUCATION CARD #}
 
   <div class="govuk-grid-column-one-third">
     <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80" alt="graduation stock image">
       <h3 class="govuk-heading-s"><a href="higher-education">Higher education</a></h3>
       <div class="text">
        <p>Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
       </div>
     </div>
   </div>
+
+
+{# A-LEVELS CARD #}
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
+      <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
+      <div class="text">
+       <p>This subject based qualification, for those aged 16 and over, can lead to university, further study, training, or work.<br><br>
+</p>
+      </div>
+    </div>
+  </div>
+
+
+
+{# Vocational Technical Qualifications (VTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <div class="text">
+        <p>Work-related qualifications for 16 to 19-year-olds available in a wide range of career areas.<br><br>
+</p> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{# # T LEVELS CARD  #} 
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="tlevels">T Levels</a></h3>
+      <div class="text">
+        <p>A 2-year qualification that includes a 45-day industry placement for students aged 16 to 19. 
+<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+
+
+
 
 {# APPRENTICESHIP CARD #}
 
@@ -67,7 +119,7 @@
       <h3 class="govuk-heading-s"><a href="apprenticeship-post18">Apprenticeship</a></h3>
       <div class="text">
         <p>For those aged 16 and over, combine working with studying to gain skills and experience in a specific job.
-<br><br><br></p> 
+<br><br></p> 
       </div>
     </div>
   </div>
@@ -80,7 +132,7 @@
       <h3 class="govuk-heading-s"><a href="supportedinternship-post18">Supported internship</a></h3>
       <div class="text">
         <p>For those aged 16 to 24, these internships provide extra support for those with an EHC to move into employment.  
-<br><br></p> 
+<br></p> 
       </div>
     </div>
   </div>
@@ -131,52 +183,9 @@
     </div>
   </div>
 
-{# START A BUSINESS CARD  #}
 
-  <div class="govuk-grid-row">
+</div>
 
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="business">Start a business</a></h3>
-      <div class="text">
-        <p>If you have a great business idea or want to be an entrepreneur, starting your own business might be right for you. 
-
-</p> 
-      </div>
-    </div>
-  </div>
-
-{# GET A JOB CARD  #}
-
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
-      <h3 class="govuk-heading-s"><a href="get-a-job">Get a job</a></h3>
-      <div class="text">
-        <p>Get straight into the working world by getting a job to start earning and gaining experience. 
-
-<br><br></p> 
-      </div>
-    </div>
-  </div>
-
-{# INTERNSHIP CARD  #}
-
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1607134541550-2994abb8077b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt="">
-      <h3 class="govuk-heading-s"><a href="internships">Internships</a></h3>
-      <div class="text">
-        <p>Gain work experience in a chosen job and learn about the industry. 
-
-<br><br><br></p> 
-      </div>
-    </div>
-  </div>
-  </div>
         
 {# TRAINEESHIP CARD  #}
 
@@ -202,11 +211,26 @@
       <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
       <h3 class="govuk-heading-s"><a href="htq">Higher technical skills courses (HTQs)</a></h3>
       <div class="text">
-        <p>[Description]</p> 
+        <p>[Description]<br><br><br><br></p> 
       </div>
     </div>
   </div>
   
+  
+
+  {# OTHER OPTIONS CARD  #}
+
+{# <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="non-gov-options">Other options</a></h3>
+      <div class="text">
+        <p>Non-government scheme routes like volunteering, starting a business, getting a job or an internship. <br><br>
+
+</p> 
+      </div>
+    </div>
+  </div> #}
 
 </div>
 
@@ -234,7 +258,18 @@
           </h2>
           <ul class="govuk-list">
             <li>
-              You could also consider <a href="">volunteering</a> to strengthen your job and study opportunities
+              If you have a great business idea or want to be an entrepreneur, <a href="startabusinessURL">starting your own business</a> might be right for you. 
+            <br><br></li>
+            <li>
+              Get straight into the working world by <a href="getajobURL">getting a job</a> to start earning and gaining experience.
+              <br><br></li>
+            <li>
+              Gain work experience in a chosen job and learn about the industry by <a href="getaninternshipURL"> getting an internship</a>
+            <br><br></li>
+            <li>
+              You could also consider <a href="volunteerURL">volunteering</a> to strengthen your job and study opportunities
+            <br><br></li>
+            <li>
             </li>
           </ul>                  
         </aside>
