@@ -63,11 +63,13 @@ html {
   padding:0 0 0 0.4em;
 }
 .text {
-  padding: 0 1em 1em 1em;
+  padding: 0 1em 0.1em 1em;
 }
 
 .cardThumbnail {
   padding: none;
+  max-height: 100px;
+  object-fit: cover;
   border-radius: 3px 3px 0px 0px;
   margin: none;
   width: 100%;
