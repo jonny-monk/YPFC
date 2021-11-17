@@ -43,14 +43,14 @@
 <div class="govuk-grid-row">
 <div class="govuk-grid-column-two-thirds">
 
- <p>
+ <p class="govuk-body">
       [Placeholder content]
       </p> 
 
   <h2 class="govuk-heading-m"> 
   How much does a 1 year funded course for 18-19 year olds cost?
   </h2>
-  <p>Content about 1 year funded courses for 18-19 year olds will be here. </p>
+  <p class="govuk-body">Content about 1 year funded courses for 18-19 year olds will be here. </p>
   
 
   
@@ -58,7 +58,7 @@
   <h2 class="govuk-heading-m"> 
 Get help and advice
   </h2>
-<p> Content placeholder </p>
+<p class="govuk-body"> Content placeholder </p>
 
 
 
@@ -68,35 +68,17 @@ Real experiences
 
 
   <h3 class="govuk-heading-s govuk-!-padding-top-6"> Name of person </h3> 
-  <p> Brief summary of what video is about </p>
+  <p class="govuk-body"> Brief summary of what video is about </p>
 
 <iframe id="ytplayer" type="text/html" width="640" height="360" class="govuk-!-margin-bottom-4"
   src="https://www.youtube.com/embed/YOcO97FKqI"
   frameborder="0"></iframe>
 
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="paste URL">
-  {{ govukButton({
-    text: "Find a course"
-  }) }}
-</form>
-
-<form action="paste URL">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
 
 
 </div>
-   <div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-one-third">
          <aside class="app-related-items" role="complementary">
           <h2 class="govuk-heading-m" id="subsection-title">
             All choices
@@ -138,6 +120,39 @@ Real experiences
  </ul>                  
         </aside>
     </div> 
+</div>
+<hr>
+
+
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-0 govuk-!-margin-bottom-6">
+<form action="paste URL">
+  {{ govukButton({
+    text: "Find a course"
+  }) }}
+</form>
+
+<form action="paste URL">
+  {{ govukButton({
+    text: "More information",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
+ </div>
+
+
+</div>
+
+</div>
+   
 </div>
 
 
