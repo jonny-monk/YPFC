@@ -11,8 +11,7 @@ Get a Kickstart job
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">[Untitled]</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="post-18"> All choices</a> </li>
+                 <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="post-18"> All choices</a> </li>
         <li class="govuk-breadcrumbs__list-item" aria-current="page">Get a Kickstart job</li>
       </ol>
     </div>
@@ -40,29 +39,7 @@ Get a Kickstart job
 
 </div>
 
-<div class="govuk-grid-row page-title-header ec-hero-blank sticky"> 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-6">
-<form action="paste URL">
-  {{ govukButton({
-    text: "Find a Kickstart job"
-  }) }}
-</form>
-
-<form action="paste URL">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
-  </div>
-    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
@@ -85,14 +62,12 @@ Get help and advice
   </h2>
 <p> Content placeholder </p>
 
+
+
 <h2 class="govuk-heading-m"> 
 Real experiences
   </h2>
 
-  <h3 class="govuk-heading-s"> Name of person </h3> 
-  <p> Brief summary of what video is about </p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nYOcO97FKqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <h3 class="govuk-heading-s govuk-!-padding-top-6"> Name of person </h3> 
   <p> Brief summary of what video is about </p>
@@ -102,12 +77,30 @@ Real experiences
   frameborder="0"></iframe>
 
 
-  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Name of person </h3> 
-  <p> Brief summary of what video is about </p>
 
-<iframe id="ytplayer" type="text/html" width="640" height="360" class="govuk-!-margin-bottom-4"
-  src="https://www.youtube.com/embed/YOcO97FKqI"
-  frameborder="0"></iframe>
+
+
+  <div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+<form action="paste URL">
+  {{ govukButton({
+    text: "Find a Kickstart job"
+  }) }}
+</form>
+
+<form action="paste URL">
+  {{ govukButton({
+    text: "More information",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
+ </div>
+  </div>
 
 </div>
    <div class="govuk-grid-column-one-third">
@@ -120,10 +113,10 @@ Real experiences
       <a href="higher-education">Higher education</a>
      </li>
      <li>
-       <a href="apprenticeship-post18">Apprenticeship</a>
+       <a href="apprenticeship">Apprenticeship</a>
      </li>
      <li>
-       <a href="supportedinternship-post18">Supported Internship </a>
+       <a href="supportedinternship">Supported Internship </a>
      </li>
      <li>
        <a href="school-leavers-scheme">School Leavers Scheme</a>
@@ -143,7 +136,7 @@ Real experiences
        <a href="internships">Internship</a>
      </li>
      <li>
-      <a href="traineeship-post18">Traineeship</a>
+      <a href="traineeship">Traineeship</a>
      </li>
      <li>
       <a href="htq">Higher technical skills courses (HTQs)</a>

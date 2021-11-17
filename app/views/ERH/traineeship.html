@@ -11,8 +11,7 @@ Traineeship
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">[Untitled]</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="all-choices">All choices  </a> </li>
+                 <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="all-choices">All choices  </a> </li>
         <li class="govuk-breadcrumbs__list-item" aria-current="page">Traineeship</li>
       </ol>
     </div>
@@ -35,7 +34,7 @@ Traineeship
 </div>
  </div>
 
-<div class="govuk-grid-row page-title-header ec-hero-blank sticky"> 
+{# <div class="govuk-grid-row page-title-header ec-hero-blank sticky"> 
 <div class="govuk-width-container">
 <div class="govuk-grid-row">
 
@@ -57,7 +56,7 @@ Traineeship
 </div>   
  </div>
   </div>
-    </div>
+    </div> #}
     </div>
   
   <div class="govuk-width-container govuk-!-padding-top-5">
@@ -154,6 +153,28 @@ You may get:</p>
 </ul>
 </section>
 
+
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+<form action="https://www.findapprenticeship.service.gov.uk/traineeshipsearch?_ga=2.241170627.1136579510.1635770276-84142030.1627993402">
+  {{ govukButton({
+    text: "Find a traineeship"
+  }) }}
+</form>
+
+<form action="https://www.gov.uk/government/collections/traineeships--2">
+  {{ govukButton({
+    text: "More information",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
+ </div>
+  </div>
 
 </div>
 

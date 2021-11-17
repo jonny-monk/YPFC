@@ -11,8 +11,7 @@ T Levels
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
         <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="exam-results">[Untitled]</a> </li>
-                <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="all-choices">All choices  </a> </li>
+                 <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="all-choices">All choices  </a> </li>
         <li class="govuk-breadcrumbs__list-item" aria-current="page">T Levels</li>
       </ol>
     </div>
@@ -35,29 +34,7 @@ T Levels
 </div>
  </div>
 
-<div class="govuk-grid-row page-title-header ec-hero-blank sticky"> 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-6">
-<form action="https://www.test.tlevels.gov.uk/students/find">
-  {{ govukButton({
-    text: "Find a T level"
-  }) }}
-</form>
-
-<form action="https://www.test.tlevels.gov.uk/students/">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
-  </div>
-    </div>
     </div>
   
     <div class="govuk-width-container govuk-!-padding-top-5">
@@ -158,23 +135,10 @@ Get help and advice
   </h2>
 <p> [Content placeholder] </p>
 
+
 <h2 class="govuk-heading-m"> 
 Real experiences
   </h2>
-
-  <h3 class="govuk-heading-s"> Hannah – Education and Childcare T Level
- </h3> 
-  <p> “Even in a year, I’ve seen so much development in myself and I feel that if I didn’t have the placement I wouldn’t be this confident.”
- </p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FQ9sgVpA6Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <h3 class="govuk-heading-s govuk-!-padding-top-6"> Stan – Digital T Level
- </h3> 
-  <p> “They treat me as an equal, I don’t feel like I’m treated as a child. I think that’s really liberating for me, I feel empowered by the fact that I’m no longer a student, I’m an employee”
- </p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gBzKfINgUZ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
   <h3 class="govuk-heading-s govuk-!-padding-top-6"> Najeeb – Construction T Level
  </h3> 
@@ -182,6 +146,29 @@ Real experiences
  </p>
 
 <iframe class="govuk-!-margin-bottom-6" width="560" height="315" src="https://www.youtube.com/embed/1zPMwM2ewms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div class="govuk-width-container">
+<div class="govuk-grid-row">
+
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+<form action="https://www.test.tlevels.gov.uk/students/find">
+  {{ govukButton({
+    text: "Find a T level"
+  }) }}
+</form>
+
+<form action="https://www.test.tlevels.gov.uk/students/">
+  {{ govukButton({
+    text: "More information",
+    classes: "govuk-button--secondary"
+  }) }}
+  </form>
+</div>   
+ </div>
+  </div>
 
 </div>
 
