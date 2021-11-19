@@ -102,22 +102,7 @@ which subjects or grades you might need for a certain job or further study after
  
 </div>
 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="https://nationalcareers.service.gov.uk/find-a-course/page?">
-  {{ govukButton({
-    text: "Find a course"
-  }) }}
-</form>
-
-
- </div>
-  </div>
-    </div>
 
 </div>
    <div class="govuk-grid-column-one-third">
@@ -171,6 +156,15 @@ which subjects or grades you might need for a certain job or further study after
  </ul>                 
         </aside>
     </div> 
+
+<div>
+<p><br>
+<br>
+<br>
+<br></p>
+</div>
+
+
 </div>
 </div>
 
@@ -189,4 +183,17 @@ which subjects or grades you might need for a certain job or further study after
 </div>
 
 
+{% endblock %}
+
+{% block footer %}
+
+<div class="filter__footer">
+<div class="govuk-width-container">
+<div class="govuk-button-group">
+    <form action="https://nationalcareers.service.gov.uk/find-a-course/page?">
+        <button class="govuk-button"> Find a course </button>
+    </form>
+</div>
+</div>
+</div>
 {% endblock %}

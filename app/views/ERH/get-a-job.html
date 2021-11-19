@@ -75,27 +75,7 @@ Real experiences
   src="https://www.youtube.com/embed/YOcO97FKqI"
   frameborder="0"></iframe>
 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="paste URL">
-  {{ govukButton({
-    text: "Find a job"
-  }) }}
-</form>
-
-<form action="paste URL">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
-    </div>
 
 
 </div>
@@ -149,6 +129,16 @@ Real experiences
  </ul>                   
         </aside>
     </div> 
+
+<div>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+</div>
+
 </div>
 
 
@@ -165,4 +155,19 @@ Real experiences
 </div>
 
 
+{% endblock %}
+
+{% block footer %}
+
+<div class="filter__footer">
+<div class="govuk-width-container">
+<div class="govuk-button-group">    <form action="/search-results.html">
+        <button class="govuk-button"> Find a job </button>
+    </form>
+        <form action="URL">
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button"> More information</button>
+    </form>
+</div>
+</div>
+</div>
 {% endblock %}

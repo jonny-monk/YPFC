@@ -166,55 +166,56 @@ Real experiences
         </aside>
     </div>
 
-
+<div>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+</div>
  
   </div>
 
 
 
 
+
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+{% endblock %}
+
+
+{% block footer %}
+
+<div class="filter__footer">
 <div class="govuk-width-container">
-<div class="govuk-grid-row">
-
-
-
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="https://www.test.tlevels.gov.uk/students/find">
-  {{ govukButton({
-    text: "Find a T level"
-  }) }}
-</form>
-
-<form action="https://www.test.tlevels.gov.uk/students/">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
-  </div>
-
+<div class="govuk-button-group">    <form action="https://www.test.tlevels.gov.uk/students/find">
+        <button class="govuk-button"> Find a T Level </button>
+    </form>
+        <form action="https://www.test.tlevels.gov.uk/students/">
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button"> More information</button>
+    </form>
 </div>
 </div>
 </div>
-
-
-
-</div>
-
-
-
-</div>
-
-</div>
-
-
-</div>
-</div>
-</div>
-
-
 {% endblock %}

@@ -198,27 +198,6 @@ Real experiences
 <iframe class="govuk-!-margin-bottom-6" width="560" height="315" src="https://www.youtube.com/embed/s0fcP0QgtGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  #}
 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
-
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="https://www.apprenticeships.gov.uk/apprentices/create-account">
-  {{ govukButton({
-    text: "Find an apprenticeship"
-  }) }}
-</form>
-
-<form action="https://www.apprenticeships.gov.uk/apprentices">
-  {{ govukButton({
-    text: "Visit the apprenticeship website",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
-  </div>
-    </div>
 
 
 </div>
@@ -273,6 +252,16 @@ Real experiences
  </ul>                   
         </aside>
     </div> 
+
+    <div>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+</div>
+
 </div>
 </div>
 
@@ -295,3 +284,17 @@ Real experiences
 
 {% endblock %}
 
+{% block footer %}
+
+<div class="filter__footer">
+<div class="govuk-width-container">
+<div class="govuk-button-group">    <form action="https://www.apprenticeships.gov.uk/apprentices/create-account">
+        <button class="govuk-button"> Find an apprenticeship </button>
+    </form>
+        <form action="https://www.apprenticeships.gov.uk/apprentices">
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button"> Visit the apprenticeship website</button>
+    </form>
+</div>
+</div>
+</div>
+{% endblock %}

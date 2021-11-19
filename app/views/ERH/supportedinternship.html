@@ -174,27 +174,7 @@ Telephone: 0800 015 0400 <br>
 8am to 10pm, 7 days a week </p>
 
 
-<div class="govuk-width-container">
-<div class="govuk-grid-row">
 
-{% from "govuk/components/button/macro.njk" import govukButton %}
-
-<div class="govuk-button-group govuk-!-margin-left-3 govuk-!-margin-top-6 govuk-!-margin-bottom-6">
-<form action="paste URL">
-  {{ govukButton({
-    text: "Find a supported internship"
-  }) }}
-</form>
-
-<form action="paste URL">
-  {{ govukButton({
-    text: "More information",
-    classes: "govuk-button--secondary"
-  }) }}
-  </form>
-</div>   
- </div>
-  </div>
 
 {# real stories #}
 <h2 class="govuk-heading-m"> 
@@ -278,6 +258,16 @@ Real experiences
         </aside>
     </div> 
 
+
+    <div>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br></p>
+</div>
+
     
 </div>
    
@@ -299,4 +289,19 @@ Real experiences
 </div>
 
 
+{% endblock %}
+
+{% block footer %}
+
+<div class="filter__footer">
+<div class="govuk-width-container">
+<div class="govuk-button-group">    <form action="URL">
+        <button class="govuk-button"> Find a supported internship </button>
+    </form>
+        <form action="URL">
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button"> More information</button>
+    </form>
+</div>
+</div>
+</div>
 {% endblock %}
