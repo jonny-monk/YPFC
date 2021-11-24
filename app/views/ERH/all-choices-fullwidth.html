@@ -44,22 +44,75 @@
   <div class="govuk-width-container">
 
   <div id="choices" class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-full">
      {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
     </div>
   </div>
 
 
-<p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3" align="right"> Show: <span style="margin: 0 8px"> </span> All <span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic"> Study-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-mixed">Study and work-based</a>
+{# <p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3" align="right"> Show: <span style="margin: 0 8px"> </span> All <span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic"> Study-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-mixed">Study and work-based</a>
 
-</p>
+</p> #}
 
 
   <div class="govuk-grid-row govuk-!-margin-top-5">
+
+<div class="govuk-!-margin-left-5">
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Filter choices
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--small">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="all" checked>
+        <label class="govuk-label govuk-radios__label" for="changed-name">
+          All choices
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="class">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Classroom-based training
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="work">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Work-based training
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="classwork">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Combined Study and work-based training
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="notraining">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          Start working without training
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+
+
+
+</div>
  
  {# HIGHER EDUCATION CARD #}
 
-  <div class="govuk-grid-column-one-third">
+  <div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="graduation stock image"> #}
       <h3 class="govuk-heading-s"><a href="higher-education">Higher education</a></h3>
@@ -73,7 +126,7 @@
 
 
 {# A-LEVELS CARD #}
-  <div class="govuk-grid-column-one-third">
+  <div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image"> #}
       <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
@@ -88,7 +141,7 @@
 
 {# Vocational Technical Qualifications (VTQs) CARD  #}
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
@@ -104,7 +157,7 @@
 {# # T LEVELS CARD  #} 
   <div class="govuk-grid-row">
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="tlevels">T Levels</a></h3>
@@ -121,7 +174,7 @@
 
 {# APPRENTICESHIP CARD #}
 
-  <div class="govuk-grid-column-one-third">
+  <div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
@@ -134,7 +187,7 @@
 
 {# SUPPORTED INTERNSHIP CARD  #}
 
-  <div class="govuk-grid-column-one-third">
+  <div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internship</a></h3>
@@ -149,7 +202,7 @@
 {# SCHOOL LEAVERS SCHEMES  #}
   <div class="govuk-grid-row">
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="school-leavers-scheme">School Leavers Schemes</a></h3>
@@ -164,7 +217,7 @@
 {# 1 YEAR FUNDED COURSE CARD #}
 
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1589923188900-85dae523342b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="1-year-course">1 year funded course</a></h3>
@@ -179,7 +232,7 @@
 {# KICKSTART CARD  #}
 
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="kickstart">Kickstart job</a></h3>
@@ -200,23 +253,41 @@
 
   <div class="govuk-grid-row">
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
       <div class="text">
         <p class="govuk-body">Traineeships give 16 to 24-year-olds the opportunity to gain the skills and work experience needed to move into an apprenticeship. 
+        </p>
+<div class="govuk-grid-column-one-third">
+  <p class="govuk-body govuk-!-font-weight-bold"> Entry requirements
+  </p>
+  <p class="govuk-body"> GCSEs
+  </p>
+  </div>  
+  <div class="govuk-grid-column-one-third">
+  <p class="govuk-body govuk-!-font-weight-bold"> Assessment type
+  </p>
+  <p class="govuk-body"> Exams and coursework (depending on course)
+  </p>
+  </div> 
+  <div class="govuk-grid-column-one-third">
+  <p class="govuk-body govuk-!-font-weight-bold"> Where it leads 
+  </p>
+  <p class="govuk-body"> Further education, apprenticeship or a real job
+  </p>
+  </div> 
+  </div>
   
 
-<br><br><br></p> 
-      </div>
     </div>
   </div>
 
     
 {# HTQs) CARD  #}
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="htq">Higher technical skills courses (HTQs)</a></h3>
@@ -231,7 +302,7 @@
 
   {# START A BUSINESS CARD #}
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="business">Start a business</a></h3>
@@ -251,7 +322,7 @@
 
   <div class="govuk-grid-row">
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
       <h3 class="govuk-heading-s"><a href="get-a-job">Get a job</a></h3>
@@ -267,7 +338,7 @@
     
 {# INTERNSHIPS AND VOLUNTEERING CARD  #}
 
-<div class="govuk-grid-column-one-third">
+<div class="govuk-grid-column-full">
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1607134541550-2994abb8077b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt=""> #}
       <h3 class="govuk-heading-s"><a href="internships">Internships and volunteering</a></h3>
