@@ -6082,7 +6082,8 @@ ul#az-index li {
 .checkbox-filter ::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0,0,0,.5);
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5)
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5)
 }
 
 .checkbox-filter .head {
@@ -6097,7 +6098,7 @@ ul#az-index li {
 }
 
 .js-enabled .checkbox-filter .head .controls {
-    float: right;
+    float: none;
     display: inline-block
 }
 
@@ -6488,7 +6489,7 @@ header #proposition-links li:first-child a:after {
 	  }
 
     td, th {
-      display: block; // For browsers that don't support flexbox
+    //   display: block; // For browsers that don't support flexbox
       display: flex;
       justify-content: space-between;
       vertical-align: middle;
