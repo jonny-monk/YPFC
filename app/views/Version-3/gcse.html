@@ -1,0 +1,207 @@
+
+{% extends "layout_ncs_erh.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+ Post-16 choices
+{% endblock %}
+
+{% block beforeContent %}
+</div>
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
+         <li class="govuk-breadcrumbs__list-item" aria-current="page">Choices at age 16+</li>
+      </ol>
+    </div>
+  </div>
+
+<div class = "ec-hero">
+    <div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Choices at age 16+        
+      </h1>
+      
+
+    
+    </div>
+    </div>
+  </div>
+  </div>
+  
+    <div class="govuk-width-container">
+
+  <div id="choices" class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+     {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
+    </div>
+  </div>
+{# <p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3">
+<a class="govuk-link" href="which-schemes"> Compare all choices in a table </a>
+</p> #}
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+ {# A-LEVELS CARD #}
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
+      <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
+      <div class="text">
+       <p class="govuk-body">A levels are subject-based qualifications for those aged 16 and over and could lead to university, further study, or starting work.  
+</p>
+      </div>
+    </div>
+  </div>
+
+{# APPRENTICESHIP CARD #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
+      <div class="text">
+        <p class="govuk-body">Apprenticeships are industry-recognised qualifications for those aged 16 and over and provide the opportunity to get hands-on experience by working whilst studying.
+<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+{# SUPPORTED INTERNSHIP CARD  #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internship</a></h3>
+      <div class="text">
+        <p class="govuk-body">For those aged 16 to 24 with an education, health and care plan (EHC), a supported internship provides the support needed to make the move into employment.    
+</p> 
+      </div>
+    </div>
+  </div>
+  </div>
+    
+{# T LEVELS CARD  #}
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="tlevels">T Levels</a></h3>
+      <div class="text">
+        <p class="govuk-body">T-levels give 16 to 19-year-olds the opportunity to get real work experience with an industry placement whilst gaining a qualification that employers look for.
+<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+
+
+        
+{# TRAINEESHIP CARD  #}
+
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
+      <div class="text">
+        <p class="govuk-body">Traineeships give 16 to 24-year-olds the opportunity to gain the skills and work experience needed to move into an apprenticeship. 
+  
+
+</p> 
+      </div>
+    </div>
+  </div>
+
+    
+{# Vocational Technical Qualifications (VTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
+      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <div class="text">
+        <p class="govuk-body">A VTQ gives the opportunity for those aged 16 to 19 years old to gain skills and experience with a work-based qualification in a wide range of career options.  
+</p> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+<section>
+  <div class="secondary-hero" style="background-color: rgba(210, 226, 241, 0.3); ">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
+        <div class="govuk-grid-column-two-third">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
+          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold"><a href="tel:0800 100 900">0800 100 900</a></span> (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or <a class="govuk-link" href="#" rel="external" onclick="event.preventDefault(); window.botmanChatWidget.open(); return false; " target="'_blank'">
+                        use webchat
+                    </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+      <div class="govuk-width-container">
+
+
+         <aside class="app-related-items govuk-!-margin-top-6" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Other opportunities
+          </h2>
+          <ul class="govuk-list">
+            <li>
+              You could also consider <a href="">volunteering</a> to strengthen your job and study opportunities
+            </li>
+          </ul>                  
+        </aside>
+    </div> 
+    </div>
+
+<script src="//webchat.nationalcareersservice.org.uk:8080/js/ncs/chatRed.js" data-project="ERH"></script>
+<div id="botmanWidgetRoot"><div id="dragTarg" class="dragIsMobile " style="position: fixed; bottom: 0px; right: 0px; z-index: -1; min-width: 90px; box-sizing: content-box; overflow: visible; min-height: 120px;"><div id="dragTargDemo" style="position: absolute; left: 0px; top: 0px; width: calc(100% - 150px); height: 50px; z-index: 9;"></div><div style="cursor: pointer;"></div><div style="display: none; height: 550px; transition: all 0.2s linear 0s;"><a target="_blank" style="font-size: 15px; text-align: right; margin-right: 10px; display: block;"></a></div></div></div>
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block scripts %}
+
+<script>
+
+
+
+function ShowWithoutImages() {
+  var cardWithImage = document.getElementById("cardGroupWithImages");
+  var linkTitle = document.getElementById("showWithoutImages");
+  var cardNoImage = document.getElementById("cardGroupNoImages");
+
+  if (cardWithImage.style.display === "none") {
+    cardWithImage.style.display = "block";
+    cardNoImage.style.display = "none";
+    linkTitle.innerHTML = 'See these without images';
+  } else {
+    cardWithImage.style.display = "none";
+    cardNoImage.style.display = "block";
+    linkTitle.innerHTML = 'See these with images';
+  }
+  
+} 
+
+
+</script>
+{% endblock %}
