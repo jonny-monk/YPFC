@@ -323,6 +323,200 @@ nav {
     border-color: #207e77;
 }
 
+
+
+
+/* -------------------------------------------------------------
+	Hero Black
+------------------------------------------------------------- */
+.PROD_full-page-width-wrapper {
+  max-width: $site-width;
+
+  @include ie-lte(8) {
+    width: $site-width;
+  }
+
+  margin: 0 $gutter-half;
+
+  @include media(tablet) {
+    margin: 0 $gutter;
+  }
+
+  @include media($min-width: ($site-width + $gutter * 2)) {
+    margin: 0 auto;
+  }
+}
+
+.PROD_hero_img {
+  background: #8C1454;
+  margin: 0 0 0em 0;
+  @include media(tablet) {
+    padding: 40px 0px 30px;
+  }
+  .govuk-heading-xl {
+    margin: 0 0 30px 0;
+    color: #FFFFFF;
+  }
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.PROD_hero {
+  background: $careers-turquoise;
+  margin: 0 0 0em 0;
+  padding: 25px 0px 15px;
+  color: #ffffff;
+  @include media(tablet) {
+    padding: 30px 0px 10px;
+  }
+  .govuk-heading-xl {
+    margin: 0 0 30px 0;
+    color: #FFFFFF;
+  }
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.PROD_hero_beta {
+  background: $careers-turquoise;
+  margin: 0 0 0em 0;
+  padding: 5px 0px 0px;
+  color: #ffffff;
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+}
+
+
+//Changes to the hero when inside a full width container
+.PROD_full-page-width-wrapper {
+  .PROD_hero_pink {
+    padding: 25px 0 15px;
+    @include media(tablet) {
+      padding: 40px 0 30px;
+    }
+  }
+}
+
+.PROD_hero .PROD_search {
+  background: $white;
+  margin-bottom: 15px;
+
+  &:after { //Clearfix
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .PROD_search__input-container {
+    float: left;
+    width: 100%;
+    padding: 0 41px 0 0;
+    margin: 0 -41px 0 0;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .PROD_search__input {
+    position: relative;
+    border: none;
+    height: 40px;
+    font-size: 19px;
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+    float:left;
+    z-index: 10;
+    font-size:16px;
+    @include media(tablet){
+      font-size:19px;
+    }
+  }
+  .PROD_search__submit {
+    float:left;
+    text-indent: -1000em;
+    position: relative;
+    float:left;
+    z-index: 1;
+    border-radius: 0;
+    background: $black;
+    width: 41px;
+    height: 40px;
+    border: none;
+    background: url(/public/images/search-button.png) $black no-repeat 4px 50%;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      z-index: 15;
+      position: relative;
+    }
+  }
+}
+.no-wrap {
+	white-space: nowrap;
+}
+.ec-hero-black {
+  background-color: #111;
+  color: #ffffff;
+  padding: 30px 0 10px;
+
+	@media (max-width: 768px) {
+			.govuk-grid-column-full-width {
+		margin: 0 20px;
+	}
+		}
+
+
+  p {
+    color: #ffffff;
+  }
+
+  input, select {
+    border: none !important;
+    color: black;
+  }
+
+  option {
+    color: black;
+  }
+
+  // button {
+  //   background-color: black;
+
+  //   &:hover {
+  //     background-color: black;
+  //     text-decoration: underline;
+  //   }
+  // }
+  .govuk-heading-xl {
+    margin: 0 0 30px 0;
+    color: #FFFFFF;
+  }
+  p {
+    color: #FFFFFF;
+    a {
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }}
+
+
+
 /* -------------------------------------------------------------
 	Job Profile Search / Related
 ------------------------------------------------------------- */
@@ -1795,3 +1989,6 @@ main #results.triage-results .results-block {
 @import "patterns/homepage.scss";
 @import "patterns/_job-profile";
 @import "patterns/_careers-advice";
+
+
+

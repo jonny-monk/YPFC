@@ -43,32 +43,94 @@
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 {% if useAutoStoreData %}
   {% block footer %}
-    {{ govukFooter({
-      meta: {
-        items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
+
+
+
+
+
+
+
+
+
+
+
+
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({
+  navigation: [
+    {
+      title: "Further information for:",
+      columns: 2,
+      items: [
+        {
+          href: "#",
+          text: "Parents"
+        },
+        {
+          href: "#",
+          text: "Teachers"
+        },
+        {
+          href: "#",
+          text: "Adult learners"
+        },
+        {
+          href: "#",
+          text: "Welsh citizens"
+        },
+        {
+          href: "#",
+          text: "Scottish citizens"
+        },
+        {
+          href: "#",
+          text: "Northern Irish citizens"
+        }
+      ]
+    },
+    {
+      title: "Additional support for:",
+      items: [
+        {
+          href: "https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan",
+          text: "Students with an Education Health and Care Plan (EHCP)"
+        }
+      ]
+    }
+  ],
+  meta: {
+    items: [
+      {
+        href: "https://govuk-prototype-kit.herokuapp.com/",
             text: "Help"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+         href: "/prototype-admin/clear-data",
             text: "Privacy and cookies"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+        href: "/prototype-admin/clear-data",
             text: "Accessibility statement"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+        href: "/prototype-admin/clear-data",
             text: "Terms and conditions"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+          href: "/prototype-admin/clear-data",
             text: "Information sources"
-          }
-        ]
+        
       }
-    }) }}
+    ],
+    html: 'Built by the <a href="#" class="govuk-footer__link">Government Digital Service</a>'
+  }
+}) }}
+
+
+
+
+
   {% endblock %}
 {% endif %}
 
