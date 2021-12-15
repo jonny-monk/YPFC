@@ -55,14 +55,22 @@
 
 
 
+
+
+
+
 {% from "govuk/components/footer/macro.njk" import govukFooter %}
 
 {{ govukFooter({
   navigation: [
     {
-      title: "Further information for:",
+      title: "Additional support",
       columns: 2,
       items: [
+        {
+          href: "https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan",
+          text: "Students with an EHCP"
+        },
         {
           href: "#",
           text: "Parents"
@@ -74,27 +82,23 @@
         {
           href: "#",
           text: "Adult learners"
-        },
-        {
-          href: "#",
-          text: "Welsh citizens"
-        },
-        {
-          href: "#",
-          text: "Scottish citizens"
-        },
-        {
-          href: "#",
-          text: "Northern Irish citizens"
         }
       ]
     },
     {
-      title: "Additional support for:",
+      title: "Information for other countries",
       items: [
         {
-          href: "https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan",
-          text: "Students with an Education Health and Care Plan (EHCP)"
+          href: "#",
+          text: "Scotland"
+        },
+        {
+          href: "#",
+          text: "Wales"
+        },
+        {
+          href: "#",
+          text: "Northern Ireland"
         }
       ]
     }
