@@ -43,32 +43,98 @@
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 {% if useAutoStoreData %}
   {% block footer %}
-    {{ govukFooter({
-      meta: {
-        items: [
-          {
-            href: "https://govuk-prototype-kit.herokuapp.com/",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% from "govuk/components/footer/macro.njk" import govukFooter %}
+
+{{ govukFooter({
+  navigation: [
+    {
+      title: "Additional support",
+      columns: 2,
+      items: [
+        {
+          href: "https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan",
+          text: "Students with SEND"
+        },
+        {
+          href: "https://www.talkingfutures.org.uk/",
+          text: "Parents"
+        },
+        {
+          href: "https://www.careersandenterprise.co.uk/",
+          text: "Teachers"
+        },
+        {
+          href: "Link-not-yet-available",
+          text: "Adult learners"
+        }
+      ]
+    },
+    {
+      title: "Information for other countries",
+      items: [
+        {
+          href: "https://www.mygov.scot/leaving-school-options",
+          text: "Scotland"
+        },
+        {
+          href: "https://careerswales.gov.wales/plan-your-career/options-at-16",
+          text: "Wales"
+        },
+        {
+          href: "https://www.nidirect.gov.uk/articles/options-after-year-12",
+          text: "Northern Ireland"
+        }
+      ]
+    }
+  ],
+  meta: {
+    items: [
+      {
+        href: "https://govuk-prototype-kit.herokuapp.com/",
             text: "Help"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+         href: "/prototype-admin/clear-data",
             text: "Privacy and cookies"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+        href: "/prototype-admin/clear-data",
             text: "Accessibility statement"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+        href: "/prototype-admin/clear-data",
             text: "Terms and conditions"
-          },
-          {
-            href: "/prototype-admin/clear-data",
+      },
+      {
+          href: "/prototype-admin/clear-data",
             text: "Information sources"
-          }
-        ]
+        
       }
-    }) }}
+    ],
+    html: 'Built by the <a href="#" class="govuk-footer__link">Government Digital Service</a>'
+  }
+}) }}
+
+
+
+
+
   {% endblock %}
 {% endif %}
 
