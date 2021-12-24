@@ -512,6 +512,67 @@ nav {
   //     text-decoration: underline;
   //   }
   // }
+
+  .man-running{
+    position: relative;
+    height: 40%;
+    max-height: 300px;
+    left: -50px;
+    top: -90px
+    }
+
+
+    .GTJ-logo{
+      position: relative;
+      height: 40%;
+      max-height: 110px;
+      left: 0px;
+      top: -100px
+      }
+
+      @media (min-width: 1000px) {
+        .GTJ-logo {
+         height: 40%;
+         max-height: 140px;
+         left: 200px;
+         top: -130px
+           }
+         }
+
+
+  .grid-column-one-half {
+      width: 50%;
+      float: left;
+  }
+  .grid-column-one-half {
+      box-sizing: border-box;
+      width: 50%;
+      padding: 0 15px;
+  }
+  
+  .grid-column-three-fifths {
+    width: 60%;
+    float: left;
+}
+.grid-column-three-fifths {
+    box-sizing: border-box;
+    width: 60%;
+    padding: 0 15px;
+}
+
+.grid-column-two-fifths {
+  width: 40%;
+  float: left;
+}
+.grid-column-two-fifths {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 0 15px;
+}
+
+
+
+
   .govuk-heading-xl {
     margin: 0 0 30px 0;
     color: #FFFFFF;
@@ -1984,6 +2045,9 @@ main #results.triage-results .results-block {
     color: #fff;
     padding: 30px 0 10px
 }
+
+
+
 
 
 
