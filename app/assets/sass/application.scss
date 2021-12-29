@@ -472,6 +472,7 @@ nav {
 }
 .ec-hero-black {
   background-color: #111;
+  max-height: 22em;
   color: #ffffff;
   padding: 30px 0 10px;
 
@@ -494,6 +495,24 @@ nav {
   p {
     color: #ffffff;
   }
+
+
+  p.govuk-body {
+		 
+		@media (max-width: 920px) {
+			font-size: 15px;;
+		 }
+	
+	}
+
+
+  h2.govuk-heading-m {
+		 
+		@media (max-width: 920px) {
+			font-size: 15px;;
+		 }
+	
+	}
 
   input, select {
     border: none !important;
