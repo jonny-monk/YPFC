@@ -20,20 +20,30 @@
     </div>
   </div>
 
-<div class = "ec-hero">
+<div class = "ec-hero-black" >
     <div class="govuk-width-container">
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="grid-column-three-fifths">
       <h1 class="govuk-heading-xl">
-     Explore your education and training choices      
-     </h1>
+You don't need to know where you're going<br><span style="color: #FEEf00"> to get going </span>    </h1>
      <p class="govuk-body choice-body">
-     There are lots of work and study choices available to you. You might be able to start an apprenticeship, find a course or take your first steps into the workplace.
+     There are lots of work and study choices available to help you <br><span style="color: #FEEf00">get the jump on a dream job you haven't dreamt of yet. </span></p>
      </p>
-          <p class="govuk-body choice-body">
+      <p class="govuk-body choice-body govuk-!-font-weight-bold">
      Already have a career in mind? Use our <a href="https://nationalcareers.service.gov.uk/explore-careers"> Explore Careers</a> service.
      </p>
+         
     </div> 
+
+<div class="grid-column-two-fifths">
+
+<img class="man-running" src="/public/images/GTJ-Header-Image-Man-Jumping-Placeholder.png">
+
+<img class="GTJ-logo" src="/public/images/GTJ-Logo-Lockup-Web.png">
+
+</div>
+
+
   </div>
   </div> 
   </div>
@@ -43,70 +53,21 @@
 {% block content %}
   <div class="govuk-width-container">
 
-  <div id="choices" class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
+  {# <div id="choices" class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
      {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
-    </div>
-  </div>
+    {# </div>
+  </div> #} 
 
 
-{# <p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3" align="right"> Show: <span style="margin: 0 8px"> </span> All <span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic"> Study-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-mixed">Study and work-based</a>
+<div class="govuk-grid-row ">
+<div class="govuk-grid-column-one-third">
 
-</p> #}
+<h2 class="govuk-heading-m">Explore your choices</h2>
+</div>
+<div class="govuk-grid-column-two-thirds">
 
-
-  <div class="govuk-grid-row govuk-!-margin-top-5">
-
-<div class="govuk-!-margin-left-5">
-
-{# 
-
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h1 class="govuk-fieldset__heading">
-        Filter choices
-      </h1>
-    </legend>
-    <div class="govuk-radios govuk-radios--small">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="all" checked>
-        <label class="govuk-label govuk-radios__label" for="changed-name">
-          All choices
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="class">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Classroom-based training
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="work">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Work-based training
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="classwork">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Combined Study and work-based training
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="notraining">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Start working without training
-        </label>
-      </div>
-    </div>
-
-  </fieldset>
-</div> #}
-
-  <div class="govuk-width-container">
-
-<p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3" align="right"> Show: <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices"> All </a><span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic">Study </a><span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work </a> <span style="margin: 0 8px"> </span>Combine study and work
+<p class="govuk-body govuk-!-padding-bottom-3" align="right"> Show: <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices"> All </a><span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic">Study </a><span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work </a> <span style="margin: 0 8px"> </span>Combine study and work
 
 </p>
 
@@ -117,8 +78,9 @@
 
 
  
+  <div class="govuk-width-container">
 
-   <div class="govuk-grid-row govuk-!-margin-top-5">
+  <div class="govuk-grid-row govuk-!-margin-top-5">
 
 
 
