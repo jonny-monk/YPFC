@@ -532,6 +532,15 @@ nav {
   //   }
   // }
 
+  .hosanna-image{
+    position: relative;
+    height: 10%;
+    max-height: 10px;   
+    left: -100px;
+    top: 50px
+    }
+
+
   .man-running{
     position: relative;
     height: 40%;
@@ -548,6 +557,15 @@ nav {
       left: 100px;
       top: -5px
       }
+
+      @media (max-width: 640px) {
+        .GTJ-logo-scheme {
+         height: 20%;
+         max-height: 80px;
+         left: 300px;
+         top: 0px
+           }
+         }
 
 
 
@@ -567,6 +585,8 @@ nav {
          top: -130px
            }
          }
+
+
 
 
   .grid-column-one-half {
