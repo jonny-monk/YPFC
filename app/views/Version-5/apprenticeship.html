@@ -25,7 +25,7 @@ Apprenticeship
 
 <div class="govuk-grid-row page-title-header ec-hero-black  govuk-!-padding-top-6"> 
   <div class="govuk-width-container">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="grid-column-mobile">
       <h2 id="alevels" class="govuk-heading-l choice-title">
 Apprenticeship      </h2>
 
@@ -34,7 +34,7 @@ For those aged 16 and over, combine working with studying to gain skills and exp
           
     </div>
 
-<div class="grid-column-one-third">
+<div class="govuk-grid-column-mobile-logo">
 
 <img class="GTJ-logo-scheme" src="/public/images/GTJ-Logo-Lockup-Web.png">
  
@@ -134,6 +134,13 @@ earn a wage and get holiday pay
    </p>
 
  </div>
+
+
+ <form action="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">
+<button class="govuk-button" data-module="govuk-button">
+Find an apprenticeship
+</button>
+</form>
 
 
 
@@ -238,22 +245,53 @@ earn a wage and get holiday pay
   </div>
 </section>
 
-<p>
-<br>
-<br>
-<br>
-<br>
-</p>
+<div class = "ec-hero-black" >
+    <div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h3 class="govuk-heading-m">
+Additional support for:
+</h3>
+<hr>
+     <ul class="govuk-list govuk-list--bullet">
+     <li>
+     <a href="https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan" class="govuk-link--inverse">Students with SEND</a>
+     </li>
+     <li>
+     <a href="https://www.talkingfutures.org.uk/" class="govuk-link--inverse">Parents</a>
+     </li>
+      <li>
+      <a href="https://www.careersandenterprise.co.uk/" class="govuk-link--inverse">Teachers</a>
+     </li>
+      <li>
+      <a href="link-not-ready-yet" class="govuk-link--inverse">Adult learners</a>
+     </li>
+     </ul>
+  </div> 
+      <div class="govuk-grid-column-one-half">
+ <h3 class="govuk-heading-m">
+Information for other countries:
+</h3>
+<hr>
+     <ul class="govuk-list govuk-list--bullet">
+     <li>
+     <a href="https://www.mygov.scot/leaving-school-options" class="govuk-link--inverse">Scotland</a>
+     </li>
+     <li>
+     <a href="https://careerswales.gov.wales/plan-your-career/options-at-16" class="govuk-link--inverse">Wales</a>
+     </li>
+      <li>
+      <a href="https://www.nidirect.gov.uk/articles/options-after-year-12" class="govuk-link--inverse">Northern Ireland</a>
+     </li>
+     </ul>
+</div>
+  </div>
+  </div> 
+  </div>
+
 
 {% endblock %}
 
-{% block footer %}
 
-<div class="filter__footer">
-<div class="govuk-width-container">
- <form action="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">
-        <button class="govuk-button"> Find an apprenticeship </button>
-    </form>
-</div>
-</div>
-{% endblock %}
+
+

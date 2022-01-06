@@ -325,6 +325,13 @@ nav {
 
 
 
+.hosanna-image{
+  position: relative;
+  height: 50%;
+  max-height: 280px;   
+  left: 0px;
+  top: -40px
+  }
 
 /* -------------------------------------------------------------
 	Hero Black
@@ -532,13 +539,7 @@ nav {
   //   }
   // }
 
-  .hosanna-image{
-    position: relative;
-    height: 10%;
-    max-height: 10px;   
-    left: -100px;
-    top: 50px
-    }
+  
 
 
   .man-running{
@@ -552,10 +553,10 @@ nav {
 
     .GTJ-logo-scheme{
       position: relative;
-      height: 40%;
-      max-height: 110px;
-      left: 100px;
-      top: -5px
+      height: 60%;
+      max-height: 150px;
+      left: 800px;
+      top: -140px
       }
 
       @media (max-width: 640px) {
@@ -620,8 +621,6 @@ nav {
 }
 
 
-
-
   .govuk-heading-xl {
     margin: 0 0 30px 0;
     color: #FFFFFF;
@@ -635,6 +634,32 @@ nav {
   }}
 
 
+
+//HALF MOBILE//
+
+.grid-column-mobile {
+  box-sizing: border-box;
+  width: 66%;
+  padding: 0 15px;
+}
+
+@media (max-width: 640px) {
+  .grid-column-mobile {
+   width: 50%;
+     }
+   }
+
+   .grid-column-mobile-logo {
+    box-sizing: border-box;
+    width: 33%;
+    padding: 0 15px;
+  }
+  
+  @media (max-width: 640px) {
+    .grid-column-mobile-logo {
+     width: 50%;
+       }
+     }
 
 /* -------------------------------------------------------------
 	Job Profile Search / Related
