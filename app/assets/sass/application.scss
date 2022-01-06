@@ -639,13 +639,13 @@ nav {
 
 .grid-column-mobile {
   box-sizing: border-box;
-  width: 66%;
+  width: 67%;
   padding: 0 15px;
 }
 
 @media (max-width: 640px) {
   .grid-column-mobile {
-   width: 50%;
+   width: 67%;
      }
    }
 
@@ -657,7 +657,7 @@ nav {
   
   @media (max-width: 640px) {
     .grid-column-mobile-logo {
-     width: 50%;
+     width: 33%;
        }
      }
 
