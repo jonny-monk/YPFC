@@ -38,7 +38,7 @@ html {
 
 .card {
   border-radius: 3px;
-  min-height: 12.5em;
+min-height: 13.5em;
   box-shadow: 1px 1px 10px 1px #cccccc;
   position: relative;
   margin: 0.5em;
@@ -49,7 +49,8 @@ html {
 @media (max-width: 640px) {
   .card {
    height: 50%;
-   max-height: 220px;
+   max-height: 225px;
+   min-height: fit-content;
      }
    }
 
