@@ -62,74 +62,70 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
+
+
+<div class="govuk-grid-row">
+ <div class="govuk-grid-column-two-thirds">
+ <h2 class="govuk-heading-m">Filter these choices</h2>
+ </div>
+</div>
 <div class="govuk-grid-row">
 
-<h2 class="govuk-heading-m govuk-!-margin-left-3">
-Filter these choices
-</h2>
-
-<div class="govuk-form-group govuk-!-margin-left-3">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-      <h1 class="govuk-fieldset__heading">
-        Type:
-      </h1>
-    </legend>
-    <div class="govuk-radios govuk-radios--small">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month" checked>
-        <label class="govuk-label govuk-radios__label" for="changed-name">
-          All
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Study
-        </label>
-      </div>
-            <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Work
-        </label>
-      </div>
-            <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Combine study and work
-        </label>
-      </div>
-    </div>
-
-  </fieldset>
+<div class="govuk-grid-column-one-third">
+{{ govukRadios({
+  classes: "govuk-radios--small",
+  idPrefix: "changed-name",
+  name: "changed-name",
+  fieldset: {
+    legend: {
+      text: "Type:",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  items: [
+    {
+      value: "all",
+      text: "All"
+    },
+    {
+      value: "study",
+      text: "Study"
+    },
+    {
+      value: "work",
+      text: "Work"
+    },
+    {
+      value: "combine",
+      text: "Combine study and work"
+    }
+  ]
+}) }}
 </div>
-
-
-<div class="govuk-form-group govuk-!-margin-left-3">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-      <h1 class="govuk-fieldset__heading">
-        Age group:
-      </h1>
-    </legend>
-    <div class="govuk-radios govuk-radios--small">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month" checked>
-        <label class="govuk-label govuk-radios__label" for="changed-name">
-          All
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-        <label class="govuk-label govuk-radios__label" for="changed-name-2">
-          Under 18s
-        </label>
-      </div>
-
-    </div>
-
-  </fieldset>
+ <div class="govuk-grid-column-one-third">
+{{ govukRadios({
+  classes: "govuk-radios--small",
+  idPrefix: "changed-name",
+  name: "changed-name",
+  fieldset: {
+    legend: {
+      text: "Age:",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--s"
+    }
+  },
+  items: [
+    {
+      value: "all",
+      text: "All"
+    },
+    {
+      value: "under-18",
+      text: "Under 18"
+    }
+  ]
+}) }}
 </div>
 
   <div class="govuk-grid-row govuk-!-margin-top-5">
