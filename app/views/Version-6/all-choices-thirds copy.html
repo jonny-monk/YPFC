@@ -1,0 +1,369 @@
+
+{% extends "layout_ncs_erh.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+ All choices
+{% endblock %}
+
+{% block beforeContent %}
+</div>
+<div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Explore your education and training choices</li>
+      </ol>
+    </div>
+  </div>
+
+<div class = "ec-hero">
+    <div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+     Explore your education and training choices      
+     </h1>
+     <p class="govuk-body choice-body">
+     There are lots of work and study choices available to you. You might be able to start an apprenticeship, find a course or take your first steps into the workplace.
+     </p>
+          <p class="govuk-body choice-body">
+     Already have a career in mind? Use our <a href="https://nationalcareers.service.gov.uk/explore-careers"> Explore Careers</a> service.
+     </p>
+    </div> 
+  </div>
+  </div> 
+  </div>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-width-container">
+
+  <div id="choices" class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+     {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
+    </div>
+  </div>
+
+
+<p class="govuk-body govuk-!-padding-bottom-3 govuk-!-padding-top-3" align="right"> Show: <span style="margin: 0 8px"> </span> All <span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic"> Study-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work-based </a> <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-mixed">Study and work-based</a>
+
+</p>
+
+
+  <div class="govuk-grid-row govuk-!-margin-top-5">
+ 
+ {# HIGHER EDUCATION CARD #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="graduation stock image"> #}
+      <h3 class="govuk-heading-s"><a href="higher-education">Higher education</a></h3>
+      <div class="text">
+       <p class="govuk-body">For those aged 18 and over, continue your higher education with a degree at university and gain the knowledge to find employment in a particular industry or job role. 
+
+       <br><br></p>
+      </div>
+    </div>
+  </div>
+
+
+{# A-LEVELS CARD #}
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image"> #}
+      <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
+      <div class="text">
+       <p class="govuk-body">A levels are subject-based qualifications for those aged 16 and over and could lead to university, further study, or starting work.  
+<br><br><br></p>
+      </div>
+    </div>
+  </div>
+
+
+
+{# Vocational Technical Qualifications (VTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
+      <div class="text">
+        <p class="govuk-body">A VTQ gives the opportunity for those aged 16 to 19 years old to gain skills and experience with a work-based qualification in a wide range of career options.  
+</p> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{# # T LEVELS CARD  #} 
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="tlevels">T Levels</a></h3>
+      <div class="text">
+        <p class="govuk-body">T-levels give 16 to 19-year-olds the opportunity to get real work experience with an industry placement whilst gaining a qualification that employers look for.
+</p> 
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+{# APPRENTICESHIP CARD #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
+      <div class="text">
+        <p class="govuk-body">Apprenticeships are industry-recognised qualifications for those aged 16 and over and provide the opportunity to get hands-on experience by working whilst studying.
+</p> 
+      </div>
+    </div>
+  </div>
+
+{# SUPPORTED INTERNSHIP CARD  #}
+
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internships for learners with an Education Health and Care Plan (EHCP)</a></h3>
+      <div class="text">
+        <p class="govuk-body">For those aged 16 to 24 with an education, health and care plan (EHCP), a supported internship provides the support needed to make the move into employment.    
+</p> 
+      </div>
+    </div>
+  </div>
+  </div>
+    
+{# SCHOOL LEAVERS SCHEMES  #}
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="school-leavers-scheme">School Leavers Schemes</a></h3>
+      <div class="text">
+        <p class="govuk-body">Aimed at those who have completed A levels, this scheme allows you to work at a large company and earn money whilst you train.  
+ <br><br></p> 
+      </div>
+    </div>
+  </div>
+
+
+{# 1 YEAR FUNDED COURSE CARD #}
+
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1589923188900-85dae523342b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="1-year-course">1 year funded course</a></h3>
+      <div class="text">
+        <p class="govuk-body">A free course for those aged 18 to 19 to gain work-related or technical skills needed by employers. 
+
+<br><br><br></p> 
+      </div>
+    </div>
+  </div>
+
+{# KICKSTART CARD  #}
+
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="kickstart">Kickstart job</a></h3>
+      <div class="text">
+        <p class="govuk-body">For 16 to 24-year-olds claiming universal credit, this 6-month work experience scheme offers the opportunity to gain the skills employers need. 
+    
+
+</p> 
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+        
+{# TRAINEESHIP CARD  #}
+
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
+      <div class="text">
+        <p class="govuk-body">Traineeships give 16 to 24-year-olds the opportunity to gain the skills and work experience needed to move into an apprenticeship. 
+  
+
+<br><br><br></p> 
+      </div>
+    </div>
+  </div>
+
+    
+{# HTQs) CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="htq">Higher technical skills courses (HTQs)</a></h3>
+      <div class="text">
+        <p class="govuk-body">For those aged 18 and over, continue your higher education with a degree at university and gain the knowledge to find employment in a particular industry or job role. 
+ </p> 
+      </div>
+    </div>
+  </div>
+  
+  
+
+  {# START A BUSINESS CARD #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="business">Start a business</a></h3>
+      <div class="text">
+        <p class="govuk-body">If you’re 18 or over and have a great business idea or want to be an entrepreneur, starting your own business might be the right career for you. 
+ 
+<br><br></p> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+{# GET A JOB  #}
+
+  <div class="govuk-grid-row">
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="get-a-job">Get a job</a></h3>
+      <div class="text">
+        <p class="govuk-body">Available to those aged 16 and over, get straight into the world of work by getting a job to start earning and gaining experience. 
+
+
+</p> 
+      </div>
+    </div>
+  </div>
+
+    
+{# INTERNSHIPS AND VOLUNTEERING CARD  #}
+
+<div class="govuk-grid-column-one-third">
+    <div class="card">
+      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1607134541550-2994abb8077b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt=""> #}
+      <h3 class="govuk-heading-s"><a href="internships">Internships and volunteering</a></h3>
+      <div class="text">
+        <p class="govuk-body">For those aged 16 and over, gain work experience in a chosen job and learn about the industry through an internship or by volunteering. 
+
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+</div>
+
+
+</div>
+<section>
+  <div class="secondary-hero" style="background-color: rgba(210, 226, 241, 0.3); ">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
+        <div class="govuk-grid-column-two-third">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
+          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold"><a href="tel:0800 100 900">0800 100 900</a></span> (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or <a class="govuk-link" href="https://nationalcareers.service.gov.uk/webchat/chat">
+                        use webchat
+                    </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  {# <div class="govuk-width-container">
+
+ <aside class="app-related-items govuk-!-margin-top-6" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Other opportunities
+          </h2>
+          <ul class="govuk-list">
+            <li>
+              If you have a great business idea or want to be an entrepreneur, <a href="startabusinessURL">starting your own business</a> might be right for you. 
+            <br><br></li>
+            <li>
+              Get straight into the working world by <a href="getajobURL">getting a job</a> to start earning and gaining experience.
+              <br><br></li>
+            <li>
+              Gain work experience in a chosen job and learn about the industry by <a href="getaninternshipURL"> getting an internship</a>
+            <br><br></li>
+            <li>
+              You could also consider <a href="volunteerURL">volunteering</a> to strengthen your job and study opportunities
+            <br><br></li>
+            <li>
+            </li>
+          </ul>                  
+        </aside>
+    </div> 
+   
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+</div>
+
+</div> #}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+{% block scripts %}
+
+<script>
+
+function ShowWithoutImages() {
+  var cardWithImage = document.getElementById("cardGroupWithImages");
+  var linkTitle = document.getElementById("showWithoutImages");
+  var cardNoImage = document.getElementById("cardGroupNoImages");
+
+  if (cardWithImage.style.display === "none") {
+    cardWithImage.style.display = "block";
+    cardNoImage.style.display = "none";
+    linkTitle.innerHTML = 'See these without images';
+  } else {
+    cardWithImage.style.display = "none";
+    cardNoImage.style.display = "block";
+    linkTitle.innerHTML = 'See these with images';
+  }
+  
+} 
+
+
+</script>
+{% endblock %}
