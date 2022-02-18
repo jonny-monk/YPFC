@@ -53,80 +53,39 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 {% block content %}
   <div class="govuk-width-container">
 
+  {# <div id="choices" class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+     {# <h2 class="govuk-heading-l govuk-!-padding-top-9"> choices </h2>  #}
+    {# </div>
+  </div> #} 
 
 
-
-
-<div class="govuk-grid-row">
- <div class="govuk-grid-column-two-thirds">
- <h2 class="govuk-heading-m">Filter these choices</h2>
- </div>
-</div>
-<div class="govuk-grid-row">
-
+<div class="govuk-grid-row ">
 <div class="govuk-grid-column-one-third">
-{{ govukRadios({
-  classes: "govuk-radios--small",
-  idPrefix: "type",
-  name: "type",
-  fieldset: {
-    legend: {
-      text: "Type:",
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  items: [
-    {
-      value: "all",
-      text: "All",
-      checked: "true"
-    },
-    {
-      value: "study",
-      text: "Study"
-    },
-    {
-      value: "work",
-      text: "Work"
-    },
-    {
-      value: "combine",
-      text: "Combine study and work"
-    }
-  ]
-}) }}
+
+<h2 class="govuk-heading-m">Explore your choices</h2>
 </div>
- <div class="govuk-grid-column-one-third">
-{{ govukRadios({
-  classes: "govuk-radios--small",
-  idPrefix: "age",
-  name: "age",
-  fieldset: {
-    legend: {
-      text: "Age:",
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  items: [
-    {
-      value: "all",
-      text: "All",
-      checked: "true"
-    },
-    {
-      value: "under-18",
-      text: "Under 18"
-    }
-  ]
-}) }}
+<div class="govuk-grid-column-two-thirds">
+
+<p class="govuk-body govuk-!-padding-bottom-3" align="right"> Show: <span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices"> All </a><span style="margin: 0 8px"> </span><a class="govuk-link" href="all-choices-academic">Study </a><span style="margin: 0 8px"> </span> <a class="govuk-link" href="all-choices-work-based"> Work </a> <span style="margin: 0 8px"> </span>Combine study and work
+
+</p>
+
+</div>
+</div>
 </div>
 
 
+
+ 
+  <div class="govuk-width-container">
 
   <div class="govuk-grid-row govuk-!-margin-top-5">
 
 
-  {# APPRENTICESHIP CARD #}
+
+
+{# APPRENTICESHIP CARD #}
 
   <div class="govuk-grid-column-two-thirds">
     <div class="card">
@@ -224,197 +183,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
   <div class="govuk-grid-row">
 
 
- {# HTQs) CARD  #}
-
-<div class="govuk-grid-column-two-thirds">
-    <div class="card">
-            <div class="govuk-grid-column-two-thirds grid-column-mobile">
-
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="htq">Higher technical skills courses (HTQs)</a></h3>
-      <div class="text">
-<p class="govuk-body">"My qualification was developed by a real company based on the type of skills they will need in future. That can only be a good thing when I start job hunting."<br><span class="govuk-body govuk-!-font-weight-bold">Jacob, 18, HTQ student</p> <br></span> 
-</p> 
-      </div>
-      </div>
-
-        <div class="govuk-grid-column-one-third">
-
-<img class="hosanna-htq" src="/public/images/GTJ-Portrait-Image-Hosanna-Apprenticeships-Placeholder.png">
-</div>
-    </div>
-  </div>
-
-
  
-
-
-
-{# A-LEVELS CARD #}
-  <div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image"> #}
-      <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
-      <div class="text">
-       <p class="govuk-body">A levels are subject-based qualifications for those aged 16 and over and could lead to university, further study, or starting work.  
-</p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-  <div class="govuk-grid-row">
-
-
- {# HIGHER EDUCATION CARD #}
-
-  <div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="graduation stock image"> #}
-      <h3 class="govuk-heading-s"><a href="higher-education">Higher education</a></h3>
-      <div class="text">
-       <p class="govuk-body">For those aged 18 and over, continue your higher education with a degree at university and gain the knowledge to find employment in a particular industry or job role. 
-
-       <br></p>
-      </div>
-    </div>
-  </div>
-
-
-
-  {# SUPPORTED INTERNSHIP CARD  #}
-
-  <div class="govuk-grid-column-two-thirds">
-    <div class="card">
-              <div class="govuk-grid-column-two-thirds grid-column-mobile">
-
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internships for learners with an Education Health and Care Plan (EHCP)</a></h3>
-      <div class="text">
-<p class="govuk-body">"I learn in a different way to most people, so having a structured course with an understanding employer just makes things so much easier."<br><span class="govuk-body govuk-!-font-weight-bold">Robin, 16, Intern at Shaw Trust</span>
-</p> 
-      </div>
-      </div>
-<div class="govuk-grid-column-one-third">
-
-<img class="hosanna-apprenticeship" src="/public/images/GTJ-Portrait-Image-Hosanna-Apprenticeships-Placeholder.png">
-</div>
-
-    </div>
-  </div>
-
-
-
-
- 
-</div>
-
-
-  <div class="govuk-grid-row">
-
-
-{# KICKSTART CARD  #}
-
-
-<div class="govuk-grid-column-two-thirds">
-    <div class="card">
-          <div class="govuk-grid-column-two-thirds grid-column-mobile">
-
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="kickstart">Kickstart job</a></h3>
-      <div class="text">
-<p class="govuk-body">"I'm working in a job that I love, and picking up new skills thanks to me 6 month kickstart scheme." <br><span class="govuk-body govuk-!-font-weight-bold">James, 20, HOP'T Sauce kickstarter</span> 
-</p> 
-
-</p> 
-</div>
-      </div>
-
-      <div class="govuk-grid-column-one-third">
-
-<img class="hosanna-kickstart" src="/public/images/GTJ-Portrait-Image-Hosanna-Apprenticeships-Placeholder.png">
-</div>
-    </div>
-  </div>
-
-
-{# SCHOOL LEAVERS SCHEMES  #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="school-leavers-scheme">School Leavers Schemes</a></h3>
-      <div class="text">
-        <p class="govuk-body">Aimed at those who have completed A levels, this scheme allows you to work at a large company and earn money whilst you train.  
- <br><br></p> 
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-  <div class="govuk-grid-row">
-
-
-  {# INTERNSHIPS AND VOLUNTEERING CARD  #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1607134541550-2994abb8077b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="internships">Internships and volunteering</a></h3>
-      <div class="text">
-        <p class="govuk-body">For those aged 16 and over, gain work experience in a chosen job and learn about the industry through an internship or by volunteering. 
-<br><br>
-        </p>
-      </div>
-    </div>
-  </div>
-  
-
-
-  
-  
-  
-
-
-
-
-
-{# GET A JOB  #}
-
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="get-a-job">Get a job</a></h3>
-      <div class="text">
-        <p class="govuk-body">Available to those aged 16 and over, get straight into the world of work by getting a job to start earning and gaining experience. 
-<br><br>
-
-</p> 
-      </div>
-    </div>
-  </div>
-
-
-  
-
-  {# START A BUSINESS CARD #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="business">Start a business</a></h3>
-      <div class="text">
-        <p class="govuk-body">If you’re 18 or over and have a great business idea or want to be an entrepreneur, starting your own business might be the right career for you. 
- 
-<br></p> 
-      </div>
-    </div>
-  </div>
 
 
 
@@ -426,17 +195,15 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
     
 
   
+  
 
 
 
 </div>
 
 
-
-
-
 </div>
-</div>
+
 <section>
   <div class="secondary-hero govuk-!-margin-top-5" style="background-color: rgba(210, 226, 241, 0.3); ">
     <div class="govuk-width-container">
@@ -477,7 +244,6 @@ Additional support for:
      </ul>
   </div> 
       <div class="govuk-grid-column-one-half">
-
  <h3 class="govuk-heading-m">
 Information for other countries:
 </h3>
@@ -507,16 +273,16 @@ Information for other countries:
           <ul class="govuk-list">
             <li>
               If you have a great business idea or want to be an entrepreneur, <a href="startabusinessURL">starting your own business</a> might be right for you. 
-            <br><br></li>
+              </li>
             <li>
               Get straight into the working world by <a href="getajobURL">getting a job</a> to start earning and gaining experience.
-              <br><br></li>
+                </li>
             <li>
               Gain work experience in a chosen job and learn about the industry by <a href="getaninternshipURL"> getting an internship</a>
-            <br><br></li>
+              </li>
             <li>
               You could also consider <a href="volunteerURL">volunteering</a> to strengthen your job and study opportunities
-            <br><br></li>
+              </li>
             <li>
             </li>
           </ul>                  
