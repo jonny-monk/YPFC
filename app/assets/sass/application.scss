@@ -329,8 +329,8 @@ nav {
   position: relative;
   height: 50%;
   max-height: 280px;   
-  left: 0px;
-  top: -24px
+  left: -70px;
+  top: -23px
   }
 
   @media (max-width: 640px) {
@@ -338,7 +338,7 @@ nav {
      height: 50%;
      max-height: 220px;
      left: 250px;
-     top: -234px
+     top: -213px
        }
      }
 
@@ -347,7 +347,7 @@ nav {
       height: 50%;
       max-height: 280px;   
       left: -50px;
-      top: -24px
+      top: -23px
       }
     
       @media (max-width: 640px) {
@@ -355,7 +355,7 @@ nav {
          height: 50%;
          max-height: 220px;
          left: 250px;
-        top: -199px
+        top: -207px
            }
          }
 
@@ -372,7 +372,7 @@ nav {
              height: 50%;
              max-height: 220px;
              left: 250px;
-            top: -214px
+            top: -208px
                }
              }
 
@@ -380,7 +380,7 @@ nav {
               position: relative;
               height: 50%;
               max-height: 280px;   
-              left: 0px;
+              left: -40px;
               top: -24px
               }
             
@@ -389,24 +389,24 @@ nav {
                  height: 50%;
                  max-height: 220px;
                  left: 250px;
-                 top: -254px
+                 top: -211px
                    }
                  }
 
-                 .hosanna-kickstart{
+                 .hosanna-supported{
                   position: relative;
                   height: 50%;
                   max-height: 280px;   
-                  left: 0px;
+                  left: -40px;
                   top: -24px
                   }
                 
                   @media (max-width: 640px) {
-                    .hosanna-kickstart {
+                    .hosanna-supported {
                      height: 50%;
                      max-height: 220px;
                      left: 250px;
-                     top: -179px
+                     top: -217px
                        }
                      }
 /* -------------------------------------------------------------
