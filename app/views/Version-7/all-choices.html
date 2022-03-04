@@ -59,66 +59,8 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 <div class="govuk-grid-row">
  <div class="govuk-grid-column-two-thirds">
- <h2 class="govuk-heading-m">Filter these choices</h2>
+ <h2 class="govuk-heading-m">Explore your choices</h2>
  </div>
-</div>
-<div class="govuk-grid-row">
-
-<div class="govuk-grid-column-one-third">
-{{ govukRadios({
-  classes: "govuk-radios--small",
-  idPrefix: "type",
-  name: "type",
-  fieldset: {
-    legend: {
-      text: "Type:",
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  items: [
-    {
-      value: "all",
-      text: "All",
-      checked: "true"
-    },
-    {
-      value: "study",
-      text: "Study"
-    },
-    {
-      value: "work",
-      text: "Work"
-    },
-    {
-      value: "combine",
-      text: "Combine study and work"
-    }
-  ]
-}) }}
-</div>
- <div class="govuk-grid-column-one-third">
-{{ govukRadios({
-  classes: "govuk-radios--small",
-  idPrefix: "age",
-  name: "age",
-  fieldset: {
-    legend: {
-      text: "Age:",
-      classes: "govuk-fieldset__legend--s"
-    }
-  },
-  items: [
-    {
-      value: "all",
-      text: "All",
-      checked: "true"
-    },
-    {
-      value: "under-18",
-      text: "Under 18"
-    }
-  ]
-}) }}
 </div>
 
 
@@ -136,9 +78,29 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
       <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
       <div class="text">
         <p class="govuk-body">"Working in theatre, especially straight from school, is really exciting. The studying element is completely up to me." <br><span class="govuk-body govuk-!-font-weight-bold">Hosanna, 19, Royal Opera House</span></p>
-        
-<br><br></p> 
+</p> 
+
+
 </div>
+
+<img class="tag" src="/public/images/worktag.png">
+
+<img class="tag" src="/public/images/studytag.png">
+
+<img class="tag" src="/public/images/u18tag.png">
+
+
+{# <strong class="govuk-tag govuk-tag--blue">
+  STUDY
+</strong>
+<strong class="govuk-tag govuk-tag--yellow">
+  WORK
+</strong>
+<strong class="govuk-tag govuk-tag--red">
+  FOR UNDER 18s
+</strong> #}
+
+
 </div>
   <div class="govuk-grid-column-one-third">
 
@@ -160,6 +122,11 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
       <div class="text">
         <p class="govuk-body">A VTQ gives the opportunity for those aged 16 to 19 years old to gain skills and experience with a work-based qualification in a wide range of career options.  
 </p> 
+<img class="tag" src="/public/images/worktag.png">
+
+<img class="tag" src="/public/images/studytag.png">
+
+<img class="tag" src="/public/images/u18tag.png">
       </div>
     </div>
   </div>
@@ -315,30 +282,6 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
   <div class="govuk-grid-row">
 
 
-{# KICKSTART CARD  #}
-
-
-<div class="govuk-grid-column-two-thirds">
-    <div class="card">
-          <div class="govuk-grid-column-two-thirds grid-column-mobile">
-
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="kickstart">Kickstart job</a></h3>
-      <div class="text">
-<p class="govuk-body">"I'm working in a job that I love, and picking up new skills thanks to me 6 month kickstart scheme." <br><span class="govuk-body govuk-!-font-weight-bold">James, 20, HOP'T Sauce kickstarter</span> 
-</p> 
-
-</p> 
-</div>
-      </div>
-
-      <div class="govuk-grid-column-one-third">
-
-<img class="hosanna-kickstart" src="/public/images/GTJ-Portrait-Image-Hosanna-Apprenticeships-Placeholder.png">
-</div>
-    </div>
-  </div>
-
 
 {# SCHOOL LEAVERS SCHEMES  #}
 
@@ -356,65 +299,9 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 </div>
 
 
-  <div class="govuk-grid-row">
-
-
-  {# INTERNSHIPS AND VOLUNTEERING CARD  #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1607134541550-2994abb8077b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWN0aW9uJTIwd29ya2VyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="internships">Internships and volunteering</a></h3>
-      <div class="text">
-        <p class="govuk-body">For those aged 16 and over, gain work experience in a chosen job and learn about the industry through an internship or by volunteering. 
-<br><br>
-        </p>
-      </div>
-    </div>
-  </div>
-  
-
-
-  
-  
-  
 
 
 
-
-
-{# GET A JOB  #}
-
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="get-a-job">Get a job</a></h3>
-      <div class="text">
-        <p class="govuk-body">Available to those aged 16 and over, get straight into the world of work by getting a job to start earning and gaining experience. 
-<br><br>
-
-</p> 
-      </div>
-    </div>
-  </div>
-
-
-  
-
-  {# START A BUSINESS CARD #}
-
-<div class="govuk-grid-column-one-third">
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="business">Start a business</a></h3>
-      <div class="text">
-        <p class="govuk-body">If you’re 18 or over and have a great business idea or want to be an entrepreneur, starting your own business might be the right career for you. 
- 
-<br></p> 
-      </div>
-    </div>
-  </div>
 
 
 
