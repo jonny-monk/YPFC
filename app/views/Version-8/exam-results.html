@@ -1,0 +1,96 @@
+{% extends "layout_ncs_erh.html" %}
+
+{% block header %}
+
+{% endblock %}
+
+{% block pageTitle %}
+Careers advice - job profiles, information and resources | National Careers Service
+{% endblock %}
+
+{% block beforeContent %}
+{# {% include "includes/beta-banner.html" %} #}
+</div>
+<header>
+  <div class="govuk-width-container">
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">[Untitled]</li>
+      </ol>
+    </div>
+  </div>
+  <div class="ec-hero">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third organisation_float_adjust"></div>
+        <div class="govuk-grid-column-full govuk-!-padding-right-9">
+          <h1 class="govuk-heading-xl">[Untitled]</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{% endblock %}
+
+{% block content %}
+<section class="brand--ncs brand__border-color organisation__section-wrap organisation__margin-bottom govuk-!-margin-top-6" id="featured-documents">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row govuk-!-margin-bottom-0 govuk-!-margin-top-3">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m govuk-!-margin-0">Explore your education and training choices</h2>
+        <p>There are lots of work and study choices available to you. You might be able to start an apprenticeship, find a course or take your first steps into the workplace.</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2338&q=80">
+      <h3 class="govuk-heading-m"><a href="gcse">Choices for ages 16+</a></h3>
+      <div class="text">
+      </div>
+    </div>
+  </div>
+      <div class="govuk-grid-column-one-half">
+    <div class="card">
+      <img class="cardThumbnail" src="https://images.unsplash.com/photo-1599687351724-dfa3c4ff81b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2340&q=80">
+      <h3 class="govuk-heading-m"><a href="post-18">Choices for ages 18+</a></h3>
+      <div class="text">
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="secondary-hero" style="background-color: rgba(210, 226, 241, 0.3); ">
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
+        <div class="govuk-grid-column-two-third">
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
+          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold"><a href="tel:0800 100 900">0800 100 900</a></span> (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or <a class="govuk-link" href="#" rel="external" onclick="event.preventDefault(); window.botmanChatWidget.open(); return false; " target="'_blank'">
+                        use webchat
+                    </a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="govuk-width-container">
+
+<aside class="app-related-items govuk-!-margin-top-6" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+        Emotional and mental health support for students
+        </h2>
+        <p class="govuk-body">Visit <span class="govuk-!-font-weight-bold">Young Minds</span> to read about <a class="govuk-link" role="button" href="https://youngminds.org.uk/find-help/feelings-and-symptoms/exam-stress/" target="_blank">dealing with exam stress.</a> </p>
+        <p class="govuk-body">If you want to speak to someone for mental health support, visit <span class="govuk-!-font-weight-bold">Mind</span> to contact their <a class="govuk-link" role="button" href="https://www.mind.org.uk/information-support/helplines/" target="_blank">mental health support helpline.</a> </p>
+        <p class="govuk-body">You can also find <a class="govuk-link" role="button" href="https://www.childline.org.uk/info-advice/school-college-and-work/school-college/assessment-results/" target="_blank">support and advice with assessment results</a> on <span class="govuk-!-font-weight-bold">Childline</span>.</p>
+</aside>
+</div>
+
+
+
+
+<script src="//webchat.nationalcareersservice.org.uk:8080/js/ncs/chatRed.js" data-project="ERH"></script>
+<div id="botmanWidgetRoot"><div id="dragTarg" class="dragIsMobile " style="position: fixed; bottom: 0px; right: 0px; z-index: -1; min-width: 90px; box-sizing: content-box; overflow: visible; min-height: 120px;"><div id="dragTargDemo" style="position: absolute; left: 0px; top: 0px; width: calc(100% - 150px); height: 50px; z-index: 9;"></div><div style="cursor: pointer;"></div><div style="display: none; height: 550px; transition: all 0.2s linear 0s;"><a target="_blank" style="font-size: 15px; text-align: right; margin-right: 10px; display: block;"></a></div></div></div>
+
+{% endblock %}

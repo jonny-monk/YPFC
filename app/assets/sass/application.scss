@@ -409,6 +409,181 @@ nav {
                      top: -217px
                        }
                      }
+
+
+
+.hosanna-apprenticeship{
+  position: relative;
+  height: 50%;
+  max-height: 280px;   
+  left: -70px;
+  top: -23px
+  }
+
+  @media (max-width: 640px) {
+    .hosanna-apprenticeship {
+     height: 50%;
+     max-height: 220px;
+     left: 250px;
+     top: -213px
+       }
+     }
+
+     .hosanna-traineeship{
+      position: relative;
+      height: 50%;
+      max-height: 280px;   
+      left: -50px;
+      top: -23px
+      }
+    
+      @media (max-width: 640px) {
+        .hosanna-traineeship {
+         height: 50%;
+         max-height: 220px;
+         left: 250px;
+        top: -207px
+           }
+         }
+
+         .hosanna-tlevel{
+          position: relative;
+          height: 50%;
+          max-height: 280px;   
+          left: -50px;
+          top: -24px
+          }
+        
+          @media (max-width: 640px) {
+            .hosanna-tlevel {
+             height: 50%;
+             max-height: 220px;
+             left: 250px;
+            top: -208px
+               }
+             }
+
+             .hosanna-htq{
+              position: relative;
+              height: 50%;
+              max-height: 280px;   
+              left: -40px;
+              top: -24px
+              }
+            
+              @media (max-width: 640px) {
+                .hosanna-htq {
+                 height: 50%;
+                 max-height: 220px;
+                 left: 250px;
+                 top: -211px
+                   }
+                 }
+
+                 .hosanna-supported{
+                  position: relative;
+                  height: 50%;
+                  max-height: 280px;   
+                  left: -80px;
+                  top: -24px
+                  }
+                
+                  @media (max-width: 640px) {
+                    .hosanna-supported {
+                     height: 50%;
+                     max-height: 220px;
+                     left: 220px;
+                     top: -217px
+                       }
+                     }
+
+//  Filter images   
+
+.apprenticeship-filter{
+  position: relative;
+  height: 50%;
+  max-height: 280px;   
+  left: 00px;
+  top: 6px
+  }
+
+  @media (max-width: 640px) {
+    .apprenticeship-filter {
+     height: 50%;
+     max-height: 220px;
+     left: 250px;
+     top: -213px
+       }
+     }
+
+     .traineeship-filter{
+      position: relative;
+      height: 50%;
+      max-height: 270px;   
+      left: -50px;
+      top: -13px
+      }
+    
+      @media (max-width: 640px) {
+        .traineeship-filter {
+         height: 50%;
+         max-height: 220px;
+         left: 250px;
+        top: -207px
+           }
+         }
+
+         .tlevel-filter{
+          position: relative;
+          height: 50%;
+          max-height: 280px;   
+          left: -50px;
+          top: 6px
+          }
+        
+          @media (max-width: 640px) {
+            .tlevel-filter {
+             height: 50%;
+             max-height: 220px;
+             left: 250px;
+            top: -208px
+               }
+             }
+
+             .htq-filter{
+              position: relative;
+              height: 50%;
+              max-height: 280px;   
+              left: -40px;
+              top: -24px
+              }
+            
+              @media (max-width: 640px) {
+                .htq-filter {
+                 height: 50%;
+                 max-height: 220px;
+                 left: 250px;
+                 top: -211px
+                   }
+                 }
+
+                 .supported-filter{
+                  position: relative;
+                  height: 50%;
+                  max-height: 280px;   
+                  left: -80px;
+                  top: -24px
+                  }
+                
+                  @media (max-width: 640px) {
+                    .supported-filter {
+                     height: 50%;
+                     max-height: 220px;
+                     left: 220px;
+                     top: -217px
+                       }
+                     }
+
 /* -------------------------------------------------------------
 	Hero Black
 ------------------------------------------------------------- */
