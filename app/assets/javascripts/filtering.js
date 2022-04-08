@@ -1,5 +1,8 @@
+
+
+
 var motivationCheckboxes = document.querySelectorAll('.motivations input')
-for (var i = 0; i < motivationCheckboxes.length; i++) {
+for (var i = 0; i < motivationCheckboxes.length; i++) {console.log(motivationCheckboxes)
   motivationCheckboxes[i].addEventListener('change', filter)
 }
 
@@ -27,6 +30,7 @@ function filter () {
   var motivationCheckboxes = document.querySelectorAll('.motivations input')
   var motivations = []
   var c
+  console.log(motivations)
   for (i = 0; i < motivationCheckboxes.length; i++) {
     if (motivationCheckboxes[i].checked) {
       c = motivationCheckboxes[i].value
@@ -147,4 +151,4 @@ function filter () {
     // y.style.display = 'none'
     x.style.display = 'block'
   }
-}
+ }

@@ -11,6 +11,20 @@
 
 {% block beforeContent %}
 </div>
+
+{%- from "moj/components/filter/macro.njk" import mojFilter -%}
+
+
+<div class="noResults" id="noResults">
+  <h2 class="govuk-heading-m govuk-!-padding-top-4"> No schemes </h2>
+    <p class="govuk-body">There are no results matching your answers, remove or change your answers to see schemes. </p>
+    <div class="moj-filter__heading-action">
+                <p><a class="govuk-link govuk-link--no-visited-state" href="">Clear filters</a></p>
+              </div>
+  </div>
+
+<script src="/public/javascripts/filtering.js"></script>
+
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
@@ -69,7 +83,9 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
         </button>
         </form>
     <section class="grey-box"> 
-    {% include "includes/age-filter.html" %}
+    <h2 id=“schemeCounter”  role=“alert” class=“grey-box govuk-heading-s” style="padding-bottom: 15px"> Number of schemes: <span id=“numberOfSchemes”></span></h2>
+
+    {% include "includes/motivations-filter.html" %}
     </section>
     <section class="grey-box"> 
     {% include "includes/length-filter.html" %}
@@ -90,6 +106,8 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
   {# APPRENTICESHIP CARD #}
 
+  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+
     <div class="card">
         
   <div class="govuk-grid-row">
@@ -104,9 +122,6 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
-
-
-
 </div>
 </div>
   <div class="govuk-grid-column-one-third">
@@ -117,8 +132,12 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
     </div>
   </div>
     </div>
+    </div>
 
  {# # T LEVELS CARD  #} 
+
+ <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+
 
     <div class="card">
       <div class="govuk-grid-row">
@@ -141,10 +160,11 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
     </div>
   </div>
-
+ </div>
 
     {# TRAINEESHIP CARD  #}
 
+    <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
 
 
     <div class="card">
@@ -162,7 +182,6 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
- 
 
 </div>
   <div class="govuk-grid-column-one-quarter">
@@ -172,9 +191,12 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
     </div>
 
+  </div>
 
 
   {# Vocational Technical Qualifications (VTQs) CARD  #}
+
+  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
 
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
@@ -190,10 +212,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
-
-
-
-
+  </div>
 
  
 
@@ -201,6 +220,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
  {# HTQs) CARD  #}
+ <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
 
     <div class="card">
      <div class="govuk-grid-column-three-quarters grid-column-mobile">
@@ -223,12 +243,15 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 </div>
     </div>
 
-
+ </div>
  
 
 
 
 {# A-LEVELS CARD #}
+
+<div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image"> #}
       <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
@@ -247,9 +270,12 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
+</div>
 
 
  {# HIGHER EDUCATION CARD #}
+
+ <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
 
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="graduation stock image"> #}
@@ -262,7 +288,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
-
+</div>
  
       </div>
 
@@ -271,6 +297,8 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
   {# SUPPORTED INTERNSHIP CARD  #}
+  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+
 
     <div class="long-box">
               <div class="govuk-grid-column-three-quarters grid-column-mobile">
@@ -297,12 +325,15 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
- 
+ </div>
 
 
 
 
 {# SCHOOL LEAVERS SCHEMES  #}
+
+<div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+
 
     <div class="card">
       {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
@@ -322,7 +353,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
 
 
-
+ </div>
 
 
 
