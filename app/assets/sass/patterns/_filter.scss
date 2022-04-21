@@ -1,0 +1,38 @@
+
+.filterDiv {
+	display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+	display: flex;
+  }
+
+
+.wrap {
+  overflow-wrap: break-word;
+}
+
+.moj-filter-layout__content {
+  overflow: hidden;
+}
+
+.moj-scrollable-pane::after {
+  box-shadow: none;
+  
+}
+
+@media (max-width: 63.75em) {
+.moj-scrollable-pane__wrapper {
+  overflow: hide;
+}
+}
+
+.mobile-button {
+  display: block;
+
+@include govuk-media-query($from: tablet) { 
+
+    display: none;
+  }
+}
