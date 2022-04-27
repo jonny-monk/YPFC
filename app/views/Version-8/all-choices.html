@@ -15,16 +15,6 @@
 {%- from "moj/components/filter/macro.njk" import mojFilter -%}
 
 
-<div class="noResults" id="noResults">
-  <h2 class="govuk-heading-m govuk-!-padding-top-4"> No schemes </h2>
-    <p class="govuk-body">There are no results matching your answers, remove or change your answers to see schemes. </p>
-    <div class="moj-filter__heading-action">
-                <p><a class="govuk-link govuk-link--no-visited-state" href="">Clear filters</a></p>
-              </div>
-  </div>
-
-<script src="/public/javascripts/filtering.js"></script>
-
 <div class="govuk-width-container">
     <div class="govuk-breadcrumbs">
       <ol class="govuk-breadcrumbs__list">
@@ -85,10 +75,10 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
     <section class="grey-box"> 
     <h2 id=“schemeCounter”  role=“alert” class=“grey-box govuk-heading-s” style="padding-bottom: 15px"> Number of schemes: <span id=“numberOfSchemes”></span></h2>
 
-    {% include "includes/motivations-filter.html" %}
+    {% include "includes/age-filter.html" %}
     </section>
     <section class="grey-box"> 
-    {% include "includes/length-filter.html" %}
+    {% include "includes/type-filter.html" %}
     </section>
      <section class="grey-box"> 
     {% include "includes/payment-filter.html" %}
@@ -136,7 +126,7 @@ You don't need to know where you're going<br><span style="color: #FEEf00"> to ge
 
  {# # T LEVELS CARD  #} 
 
- <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
+ <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12 work">
 
 
     <div class="card">

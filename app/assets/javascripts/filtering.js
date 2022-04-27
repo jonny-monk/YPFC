@@ -1,138 +1,108 @@
+var ageRadio = document.querySelectorAll('.age input')
+for (var i = 0; i < ageRadio.length; i++) {
+  ageRadio[i].addEventListener('change', filter)
+};
+
+var typeCheckboxes = document.querySelectorAll('.type input')
+for (var ii = 0; ii < typeCheckboxes.length; ii++) {
+  typeCheckboxes[ii].addEventListener('change', filter)
+};
+
+var ehcRadio = document.querySelectorAll('.ehc input')
+for (var iii = 0; iii < ehcRadio.length; iii++) {
+  ehcRadio[iii].addEventListener('change', filter)
+};
 
 
-
-var motivationCheckboxes = document.querySelectorAll('.motivations input')
-for (var i = 0; i < motivationCheckboxes.length; i++) {console.log(motivationCheckboxes)
-  motivationCheckboxes[i].addEventListener('change', filter)
-}
-
-var timeCheckboxes = document.querySelectorAll('.times input')
-for (var ii = 0; ii < timeCheckboxes.length; ii++) {
-  timeCheckboxes[ii].addEventListener('change', filter)
-}
-
-var payCheckboxes = document.querySelectorAll('.payment input')
-for (var iii = 0; iii < payCheckboxes.length; iii++) {
-  payCheckboxes[iii].addEventListener('change', filter)
-}
-
-var qualificationCheckboxes = document.querySelectorAll(
-  '.qualifications input'
-)
-for (var iiii = 0; iiii < qualificationCheckboxes.length; iiii++) {
-  qualificationCheckboxes[iiii].addEventListener('change', filter)
-}
 
 filter()
 function filter () {
+console.log('dsadas')
+
   var i, j
   // Get the selected categories
-  var motivationCheckboxes = document.querySelectorAll('.motivations input')
-  var motivations = []
+  var ageRadio = document.querySelectorAll('.age input')
+  var age = []
   var c
-  console.log(motivations)
-  for (i = 0; i < motivationCheckboxes.length; i++) {
-    if (motivationCheckboxes[i].checked) {
-      c = motivationCheckboxes[i].value
-      motivations.push(c)
+  for (i = 0; i < ageRadio.length; i++) {
+    if (ageRadio[i].checked) {
+      c = ageRadio[i].value
+      age.push(c)
     }
   }
 
-  var timeCheckboxes = document.querySelectorAll('.times input')
-  var time = []
+  var typeCheckboxes = document.querySelectorAll('.type input')
+  var type = []
   var cc
-  for (i = 0; i < timeCheckboxes.length; i++) {
-    if (timeCheckboxes[i].checked) {
-      cc = timeCheckboxes[i].value
-      time.push(cc)
+  for (i = 0; i < typeCheckboxes.length; i++) {
+    if (typeCheckboxes[i].checked) {
+      cc = typeCheckboxes[i].value
+      type.push(cc)
     }
   }
 
-  var payCheckboxes = document.querySelectorAll('.payment input')
-  var pay = []
+  var ehcRadio = document.querySelectorAll('.ehc input')
+  var ehc = []
   var ccc
-  for (i = 0; i < payCheckboxes.length; i++) {
-    if (payCheckboxes[i].checked) {
-      ccc = payCheckboxes[i].value
-      pay.push(ccc)
+  for (i = 0; i < ehcRadio.length; i++) {
+    if (ehcRadio[i].checked) {
+      ccc = ehcRadio[i].value
+      ehc.push(ccc)
     }
   }
 
-  var qualificationCheckboxes = document.querySelectorAll(
-    '.qualifications input'
-  )
-  var qualification = []
-  var cccc
-  for (i = 0; i < qualificationCheckboxes.length; i++) {
-    if (qualificationCheckboxes[i].checked) {
-      cccc = qualificationCheckboxes[i].value
-      qualification.push(cccc)
-    }
-  }
 
   // Apply the filter
   var items = document.querySelectorAll('.filterDiv')
-  var item, motivationShow, timeShow, payShow, qualificationShow
+  var item, ageshow, typeshow, ehcShow
 
   for (i = 0; i < items.length; i++) {
     item = items[i]
-    if (motivations.length === 0) {
-      motivationShow = true
+    if (age.length === 0) {
+      ageshow = true
     } else {
-      motivationShow = false
-      for (j = 0; j < motivations.length; j++) {
-        if (item.classList.contains(motivations[j])) {
-          motivationShow = true
+      ageshow = false
+      for (j = 0; j < age.length; j++) {
+        if (item.classList.contains(age[j])) {
+          ageshow = true
           break
         } else {
-          motivationShow = false
+          ageshow = false
         }
       }
     }
 
-    if (time.length === 0) {
-      timeShow = true
+    if (type.length === 0) {
+      typeshow = true
     } else {
-      timeShow = false
-      for (j = 0; j < time.length; j++) {
-        if (item.classList.contains(time[j])) {
-          timeShow = true
+      typeshow = false
+      for (j = 0; j < type.length; j++) {
+        if (item.classList.contains(type[j])) {
+          typeshow = true
           break
         } else {
-          timeShow = false
+          typeshow = false
         }
       }
     }
 
-    if (pay.length === 0) {
-      payShow = true
+    if (ehc.length === 0) {
+      ehcShow = true
     } else {
-      payShow = false
-      for (j = 0; j < pay.length; j++) {
-        if (item.classList.contains(pay[j])) {
-          payShow = true
+      ehcShow = false
+      for (j = 0; j < ehc.length; j++) {
+        if (item.classList.contains(ehc[j])) {
+          ehcShow = true
           break
         } else {
-          payShow = false
+          ehcShow = false
         }
       }
     }
 
-    if (qualification.length === 0) {
-      qualificationShow = true
-    } else {
-      qualificationShow = false
-      for (j = 0; j < qualification.length; j++) {
-        if (item.classList.contains(qualification[j])) {
-          qualificationShow = true
-          break
-        } else {
-          qualificationShow = false
-        }
-      }
-    }
+   
 
-    if (motivationShow && timeShow && payShow && qualificationShow) {
+    if (ageshow && typeshow && ehcShow) {
       item.classList.add('show')
     } else {
       item.classList.remove('show')
@@ -151,4 +121,4 @@ function filter () {
     // y.style.display = 'none'
     x.style.display = 'block'
   }
- }
+}

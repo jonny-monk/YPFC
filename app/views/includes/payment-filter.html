@@ -1,31 +1,27 @@
-<div class="govuk-form-group payment">
+<div class="govuk-form-group ehc">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-0">
-        Do you have an Education and Healthcare Plan (EHCP)? 
+      <h3 class="govuk-fieldset__heading">
+        Education, health and care plan (EHC) choices
       </h3>
     </legend>
-    {# <div id="payment-hint" class="govuk-hint">
-    For example, are you able to pay at least the national minimum wage and some costs such as travel expenses? 
-  </div> #}
-    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-      <div class="govuk-checkboxes__item pay">
-      <input type="checkbox" name="pay[]" id="pay-paid" value="paid" class="govuk-checkboxes__input service-checkbox" data-controls="js-search-results-info" aria-controls="js-search-results-info">
-        <label class="govuk-label govuk-checkboxes__label" for="pay-paid">
-           Yes
+    <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="yes" name="ehc" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="yes">
+          I have an EHC plan
         </label>
       </div>
-      <div class="govuk-checkboxes__item pay">
-        <input class="govuk-checkboxes__input" id="pay-unpaid" name="unpaid" type="checkbox" value="unpaid">
-        <label class="govuk-label govuk-checkboxes__label" for="pay-unpaid">
-          No
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="no" name="ehc" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="no">
+          I do not have an EHC plan
         </label>
       </div>
     </div>
 
   </fieldset>
 </div>
-
  
 
 

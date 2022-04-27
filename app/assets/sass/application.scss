@@ -29,6 +29,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/step-by-step-related";
 @import "patterns/top-navigation";
 @import "patterns/nhs-table";
+@import "patterns/filter";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";
@@ -49,6 +50,10 @@ $govuk-assets-path: '/govuk/assets/';
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 $site-width:960px;
+
+.app-width-container--wide {
+  @include govuk-width-container(1100px);
+}
 
 // Change to header to change colour of blue border underneath header.
 .govuk-header__container {
@@ -499,90 +504,16 @@ nav {
 
 //  Filter images   
 
-.apprenticeship-filter{
-  position: relative;
-  height: 50%;
-  max-height: 280px;   
-  left: 00px;
-  top: 6px
-  }
+.filter-img {
+position: absolute;
+max-height: 280px;
+bottom: 0;
+right: 0;
+@media (max-width: 640px) {
+max-height: 180px;
+}
+}
 
-  @media (max-width: 640px) {
-    .apprenticeship-filter {
-     height: 50%;
-     max-height: 220px;
-     left: 250px;
-     top: -213px
-       }
-     }
-
-     .traineeship-filter{
-      position: relative;
-      height: 50%;
-      max-height: 270px;   
-      left: -50px;
-      top: -13px
-      }
-    
-      @media (max-width: 640px) {
-        .traineeship-filter {
-         height: 50%;
-         max-height: 220px;
-         left: 250px;
-        top: -207px
-           }
-         }
-
-         .tlevel-filter{
-          position: relative;
-          height: 50%;
-          max-height: 280px;   
-          left: -50px;
-          top: 6px
-          }
-        
-          @media (max-width: 640px) {
-            .tlevel-filter {
-             height: 50%;
-             max-height: 220px;
-             left: 250px;
-            top: -208px
-               }
-             }
-
-             .htq-filter{
-              position: relative;
-              height: 50%;
-              max-height: 280px;   
-              left: -40px;
-              top: -24px
-              }
-            
-              @media (max-width: 640px) {
-                .htq-filter {
-                 height: 50%;
-                 max-height: 220px;
-                 left: 250px;
-                 top: -211px
-                   }
-                 }
-
-                 .supported-filter{
-                  position: relative;
-                  height: 50%;
-                  max-height: 280px;   
-                  left: -80px;
-                  top: -24px
-                  }
-                
-                  @media (max-width: 640px) {
-                    .supported-filter {
-                     height: 50%;
-                     max-height: 220px;
-                     left: 220px;
-                     top: -217px
-                       }
-                     }
 
 /* -------------------------------------------------------------
 	Hero Black
