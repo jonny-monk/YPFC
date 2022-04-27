@@ -1,499 +1,542 @@
+{% extends "layout.html" %} {% block pageTitle %} Find training and employment
+schemes for your business {% endblock %} {% block beforeContent %}
 
-{% extends "layout_ncs_erh.html" %}
-
-{% block header %}
-
-{% endblock %}
-
-{% block pageTitle %}
- All choices
-{% endblock %}
-
-{% block beforeContent %}
 </div>
-
-{%- from "moj/components/filter/macro.njk" import mojFilter -%}
-
 
 <div class="govuk-width-container">
-    <div class="govuk-breadcrumbs">
-      <ol class="govuk-breadcrumbs__list">
-        <li class="govuk-breadcrumbs__list-item"> <a name="BreadbrumbLink" class="govuk-breadcrumbs__link" href="homepage-banner">Home</a> </li>
-        <li class="govuk-breadcrumbs__list-item" aria-current="page">Explore your education and training choices</li>
-      </ol>
-    </div>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a
+          name="BreadbrumbLink"
+          class="govuk-breadcrumbs__link"
+          href="homepage-banner"
+          >Home</a
+        >
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Explore your education and training choices
+      </li>
+    </ol>
   </div>
-
-<div class = "ec-hero-black" >
-    <div class="govuk-width-container">
-  <div class="govuk-grid-row">
-    <div class="grid-column-three-fifths">
-      <h1 class="govuk-heading-xl">
-You don't need to know where you're going<br><span style="color: #FEEf00"> to get going </span>    </h1>
-     <p class="govuk-body choice-body">
-     There are lots of work and study choices available to help you <br><span style="color: #FEEf00">get the jump on a dream job you haven't dreamt of yet. </span></p>
-     </p>
-      <p class="govuk-body choice-body govuk-!-font-weight-bold">
-     Already have a career in mind? Use our <a href="https://nationalcareers.service.gov.uk/explore-careers"> Explore Careers</a> service.
-     </p>
-         
-    </div> 
-
-<div class="grid-column-two-fifths">
-
-<img class="man-running" src="/public/images/GTJ-Header-Image-Man-Jumping.png">
-
-<img class="GTJ-logo" src="/public/images/GTJ-Logo-Lockup-Web.png">
-
 </div>
 
-
-  </div>
-  </div> 
-  </div>
-
-{% endblock %}
-
-{% block content %}
+<div class="ec-hero-black">
   <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="grid-column-three-fifths">
+        <h1 class="govuk-heading-xl">
+          You don't need to know where you're going<br /><span
+            style="color: #feef00"
+          >
+            to get going
+          </span>
+        </h1>
+        <p class="govuk-body choice-body">
+          There are lots of work and study choices available to help you
+          <br /><span style="color: #feef00"
+            >get the jump on a dream job you haven't dreamt of yet.
+          </span>
+        </p>
 
+        <p class="govuk-body choice-body govuk-!-font-weight-bold">
+          Already have a career in mind? Use our
+          <a href="https://nationalcareers.service.gov.uk/explore-careers">
+            Explore Careers</a
+          >
+          service.
+        </p>
+      </div>
 
+      <div class="grid-column-two-fifths">
+        <img
+          class="man-running"
+          src="/public/images/GTJ-Header-Image-Man-Jumping.png"
+        />
 
-
-
-
-
- <div class="govuk-grid-row">
-   
-  <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Filter your choices</h2>
-      <form action="all-choices-filter-hidden">
-        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-          Hide filter
-        </button>
-        </form>
-    <section class="grey-box"> 
-    <h2 id=“schemeCounter”  role=“alert” class=“grey-box govuk-heading-s” style="padding-bottom: 15px"> Number of schemes: <span id=“numberOfSchemes”></span></h2>
-
-    {% include "includes/age-filter.html" %}
-    </section>
-    <section class="grey-box"> 
-    {% include "includes/type-filter.html" %}
-    </section>
-     <section class="grey-box"> 
-    {% include "includes/payment-filter.html" %}
-    </section>
-     <section class="grey-box"> 
-    {% include "includes/qualifications-filter.html" %}
-    </section>
+        <img class="GTJ-logo" src="/public/images/GTJ-Logo-Lockup-Web.png" />
+      </div>
+    </div>
   </div>
+</div>
 
 
- <div class="govuk-grid-column-two-thirds">
-
-
-
-
-  {# APPRENTICESHIP CARD #}
-
-  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-    <div class="card">
-        
+{% endblock %} {% block content %} 
+<div class="govuk-width-container">
+  <!-- Don't know what these divs do but if I remove it breaks the layout -->
   <div class="govuk-grid-row">
-    
-          <div class="govuk-grid-column-two-thirds grid-column-mobile">
-
-      <h3 class="govuk-heading-s"><a href="apprenticeship">Apprenticeship</a></h3>
-      <div class="text">
-        <p class="govuk-body">“My apprenticeship allows me to combine my skills and passion for creativity in the digital sector and I get to earn whilst I learn on the job.”
-                             <br><span class="govuk-body govuk-!-font-weight-bold">Jannah, 20, software engineering degree apprenticeship at KPMG</span></p>
-</p> 
-
-
-
-</div>
-</div>
-  <div class="govuk-grid-column-one-third">
-
-<img class="apprenticeship-filter" src="/public/images/GTJapprenticeships.png">
-
-
-    </div>
+    <div class="govuk-grid-column-two-thirds"></div>
   </div>
-    </div>
-    </div>
-
- {# # T LEVELS CARD  #} 
-
- <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12 work">
-
-
-    <div class="card">
-      <div class="govuk-grid-row">
-
-          <div class="govuk-grid-column-three-quarters grid-column-mobile">
-
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="tlevels">T Levels</a></h3>
-      <div class="text">
-        <p class="govuk-body">"I chose T Levels because I liked the fact that they do work experience, which you don't get with A Levels. This gives you real insight into the world of work."<br><span class="govuk-body govuk-!-font-weight-bold">Chloe, 16, T Level student at HSDC</span>
-</p> 
-</div>
-
+  <!-- end -->
+  <div class="moj-filter-layout">
+    <div class="moj-filter-layout__filter">
+      <div class="moj-filter">
+        <div class="moj-filter__header">
+          <div class="moj-filter__header-title">
+            <h2 class="govuk-heading-m">Filter your choices</h2>
           </div>
-  <div class="govuk-grid-column-one-quarter">
 
-<img class="tlevel-filter" src="/public/images/GTJtlevels.png">
-</div>
+          <div class="moj-filter__header-action"></div>
+        </div>
 
+        <div class="moj-filter__content">
+          <div class="moj-filter__options">
+            <h2
+              id="schemeCounter"
+              role="alert"
+              class="grey-box govuk-heading-s"
+              style="padding-bottom: 15px"
+            >
+              Number of schemes: <span id="numberOfSchemes"></span>
+            </h2>
 
+            {% include "includes/age-filter.html" %} {% include
+            "includes/type-filter.html" %} {% include
+            "includes/payment-filter.html" %}
+
+            <div class="moj-filter__heading-action">
+              <p>
+                <a class="govuk-link govuk-link--no-visited-state" href=""
+                  >Clear filters</a
+                >
+              </p>
+            </div>
+
+            <div
+              class="mobile-button moj-action-bar__filter"
+              class="govuk-button"
+              style="float: none"
+            ></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
- </div>
 
-    {# TRAINEESHIP CARD  #}
+    <div class="moj-filter-layout__content">
+      <div class="moj-action-bar">
+        <div
+          class="moj-action-bar__filter"
+          style="float: none; padding-right: 20px"
+        ></div>
 
-    <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-     <div class="govuk-grid-column-three-quarters grid-column-mobile">
-
-      <h3 class="govuk-heading-s"><a href="traineeship">Traineeship</a></h3>
-      <div class="text">
-<p class="govuk-body">“The 2 month traineeship was really good. It helped to build my confidence, prepare my CV and helped with my communication. The traineeship made me realise that this was what I wanted to do as a career.”<br><span class="govuk-body govuk-!-font-weight-bold">Nellie, 20, former trainee, now apprentice at Specsavers Hemel Hempstead</span>  </p> 
-        
-
-</p> 
+        <div class="moj-button-menu">
+          <div class="moj-button-menu__wrapper"></div>
+        </div>
       </div>
 
-
-
-
-
-</div>
-  <div class="govuk-grid-column-one-quarter">
-
-<img class="traineeship-filter" src="/public/images/GTJtraineeships.png">
-</div>
-
-    </div>
-
-  </div>
-
-
-  {# Vocational Technical Qualifications (VTQs) CARD  #}
-
-  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="vtq">Vocational Technical Qualifications (VTQs)</a></h3>
-      <div class="text">
-        <p class="govuk-body">A VTQ gives the opportunity for those aged 16 to 19 years old to gain skills and experience with a work-based qualification in a wide range of career options.  
-</p> 
-
-
-
-       </div>
-    </div>
-
-
-
-  </div>
-
- 
-
-
-
-
- {# HTQs) CARD  #}
- <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-    <div class="card">
-     <div class="govuk-grid-column-three-quarters grid-column-mobile">
-
-      <h3 class="govuk-heading-s"><a href="htq">Higher technical skills courses (HTQs)</a></h3>
-      <div class="text">
-<p class="govuk-body">"I joined the South-Central Institute of Technology in 2020 to advance my education in cyber security. It has been the best choice for me to experience working with employers and get the chance to explore different sectors of technology."<br><span class="govuk-body govuk-!-font-weight-bold">Deborah, 19, HND cyber security and networking</p> </span> 
-</p> 
+      <div class="noResults" id="noResults">
+        <h2 class="govuk-heading-m govuk-!-padding-top-4">No schemes</h2>
+        <p class="govuk-body">
+          There are no results matching your answers, remove or change your
+          answers to see schemes.
+        </p>
+        <div class="moj-filter__heading-action">
+          <p>
+            <a class="govuk-link govuk-link--no-visited-state" href=""
+              >Clear filters</a
+            >
+          </p>
+        </div>
       </div>
 
+      <div class="moj-scrollable-pane">
+        <div class="moj-scrollable-pane__wrapper">
+          <hr
+            class="govuk-section-break govuk-section-break--s govuk-section-break--visible govuk-!-margin-bottom-5"
+          />
 
+          {# APPRENTICESHIP CARD #}
 
+          <div
+            class="filterDiv under over mix yes no"
+          >
+            <div class="card">
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds grid-column-mobile">
+                  <h3 class="govuk-heading-s">
+                    <a href="apprenticeship">Apprenticeship</a>
+                  </h3>
+                  <div class="text">
+                    <p class="govuk-body">
+                      “My apprenticeship allows me to combine my skills and
+                      passion for creativity in the digital sector and I get to
+                      earn whilst I learn on the job.”
+                    </p>
+                    <p>
+                      <span class="govuk-body govuk-!-font-weight-bold"
+                        >Jannah, 20, software engineering degree apprenticeship
+                        at KPMG</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="govuk-grid-column-one-third">
+                  <img
+                    class="filter-img"
+                    src="/public/images/GTJapprenticeships.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
- 
-      </div>
+          {# # T LEVELS CARD #}
 
-        <div class="govuk-grid-column-one-quarter">
+          <div
+            class="filterDiv under over mix yes no "
+          >
+            <div class="card">
+              <div class="govuk-grid-row">
+                <div
+                  class="govuk-grid-column-three-quarters grid-column-mobile"
+                >
+                  {#
+                  <img
+                    class="cardThumbnail"
+                    src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                    alt=""
+                  />
+                  #}
+                  <h3 class="govuk-heading-s">
+                    <a href="tlevels">T Levels</a>
+                  </h3>
+                  <div class="text">
+                    <p class="govuk-body">
+                      "I chose T Levels because I liked the fact that they do
+                      work experience, which you don't get with A Levels. This
+                      gives you real insight into the world of work."<br /><span
+                        class="govuk-body govuk-!-font-weight-bold"
+                        >Chloe, 16, T Level student at HSDC</span
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="govuk-grid-column-one-quarter">
+                  <img
+                    class="filter-img"
+                    src="/public/images/GTJtlevels.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-<img class="htq-filter" src="/public/images/GTJHTQs.png">
-</div>
-    </div>
+          {# TRAINEESHIP CARD #}
 
- </div>
- 
-
-
-
-{# A-LEVELS CARD #}
-
-<div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image"> #}
-      <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
-      <div class="text">
-       <p class="govuk-body">A levels are subject-based qualifications for those aged 16 and over and could lead to university, further study, or starting work.  
-<br><br></p>
-
-
-
-
-
- 
-      </div>
-
-    </div>
-
-
-
-</div>
-
-
- {# HIGHER EDUCATION CARD #}
-
- <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="graduation stock image"> #}
-      <h3 class="govuk-heading-s"><a href="higher-education">Higher education</a></h3>
-      <div class="text">
-       <p class="govuk-body">For those aged 18 and over, continue your higher education with a degree at university and gain the knowledge to find employment in a particular industry or job role. 
-
-       <br><br><br></p>
-
-
-
-
-</div>
- 
-      </div>
-
-    </div>
-
-
-
-  {# SUPPORTED INTERNSHIP CARD  #}
-  <div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-
-    <div class="long-box">
+          <div class="filterDiv under over mix yes no" >
+            <div class="card">          
               <div class="govuk-grid-column-three-quarters grid-column-mobile">
+                <h3 class="govuk-heading-s">
+                  <a href="traineeship">Traineeship</a>
+                </h3>
+                <div class="text">
+                  <p class="govuk-body">
+                    “The 2 month traineeship was really good. It helped to build
+                    my confidence, prepare my CV and helped with my
+                    communication. The traineeship made me realise that this was
+                    what I wanted to do as a career.”</p><p><span
+                      class="govuk-body govuk-!-font-weight-bold"
+                      >Nellie, 20, former trainee, now apprentice at Specsavers
+                      Hemel Hempstead</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-quarter">
+                <img
+                  class="filter-img"
+                  src="/public/images/GTJtraineeships.png"
+                />
+              </div>
+            </div>
+          </div>
+          
+          {# Vocational Technical Qualifications (VTQs) CARD #}
 
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="supportedinternship">Supported internships for learners with an Education Health and Care Plan (EHCP)</a></h3>
-      <div class="text">
-<p class="govuk-body">“My supported internship has been the best opportunity of my life. My job coach from Lighthouse Futures Trust supported me every step of the way and helped unlock my potential. I'm now working for Johnson & Johnson and achieving things I never thought I would achieve.” <br><span class="govuk-body govuk-!-font-weight-bold">Josh, 20, DePuy Synthes, Johnson & Johnson</span>
-</p> 
+          <div
+            class="filterDiv under over mix yes no"
+          >
+            <div class="card">
+              <div style="padding: 0 15px">
+              <div class="govuk-full-width grid-column-mobile">
+              <h3 class="govuk-heading-s">
+                <a href="vtq">Vocational Technical Qualifications (VTQs)</a>
+              </h3>
+              <div class="text">
+                <p class="govuk-body">
+                  A VTQ gives the opportunity for those aged 16 to 19 years old
+                  to gain skills and experience with a work-based qualification
+                  in a wide range of career options.
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
 
+          {# HTQs) CARD #}
+          <div
+            class="filterDiv over classroom yes no"
+          >
+            <div class="card">
+              <div class="govuk-grid-column-three-quarters grid-column-mobile">
+                <h3 class="govuk-heading-s">
+                  <a href="htq">Higher technical skills courses (HTQs)</a>
+                </h3>
+                <div class="text">
+                  <p class="govuk-body">
+                    "I joined the South-Central Institute of Technology in 2020
+                    to advance my education in cyber security. It has been the
+                    best choice for me to experience working with employers and
+                    get the chance to explore different sectors of technology."
+                  </p>
+                  <p>
+                    <span class="govuk-body govuk-!-font-weight-bold"
+                      >Deborah, 19, HND cyber security and networking
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div class="govuk-grid-column-one-quarter">
+                <img class="filter-img" src="/public/images/GTJHTQs.png" />
+              </div>
+            </div>
+          </div>
+
+          {# A-LEVELS CARD #}
+
+          <div
+            class="filterDiv under over classroom yes no "
+          >
+            <div class="card">
+          <div style="padding: 0 15px">
+                        <h3 class="govuk-heading-s"><a href="alevels">A Levels</a></h3>
+              <div class="text">
+                <p class="govuk-body">
+                  A levels are subject-based qualifications for those aged 16
+                  and over and could lead to university, further study, or
+                  starting work. <br /><br />
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          {# HIGHER EDUCATION CARD #}
+
+          <div
+            class="filterDiv over classroom yes no "
+          >
+            <div class="card">
+              <div style="padding: 0 15px">
+              <h3 class="govuk-heading-s">
+                <a href="higher-education">Higher education</a>
+              </h3>
+              <div class="text">
+                <p class="govuk-body">
+                  For those aged 18 and over, continue your higher education
+                  with a degree at university and gain the knowledge to find
+                  employment in a particular industry or job role.
+
+                                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          {# SUPPORTED INTERNSHIP CARD #}
+          <div
+            class="filterDiv under over work yes"
+          >
+            <div class="long-box">
+              <div class="govuk-grid-column-three-quarters grid-column-mobile">
+                {#
+                <img
+                  class="cardThumbnail"
+                  src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                  alt=""
+                />
+                #}
+                <h3 class="govuk-heading-s">
+                  <a href="supportedinternship"
+                    >Supported internships for learners with an Education Health
+                    and Care Plan (EHCP)</a
+                  >
+                </h3>
+                <div class="text">
+                  <p class="govuk-body">
+                    “My supported internship has been the best opportunity of my
+                    life. My job coach from Lighthouse Futures Trust supported
+                    me every step of the way and helped unlock my potential. I'm
+                    now working for Johnson & Johnson and achieving things I
+                    never thought I would achieve.” <br /><span
+                      class="govuk-body govuk-!-font-weight-bold"
+                      >Josh, 20, DePuy Synthes, <br>Johnson & Johnson</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="govuk-grid-column-one-quarter">
+                <img
+                  class="filter-img" style="right:-20px"
+                  src="/public/images/GTJsupported.png"
+                />
+              </div>
+            </div>
+          </div>
+
+          {# SCHOOL LEAVERS SCHEMES #}
+
+          <div
+            class="filterDiv under over work yes no"
+          >
+            <div class="card">
+              <div style="padding: 0 15px">
+              <h3 class="govuk-heading-s">
+                <a href="school-leavers-scheme">School Leavers Schemes</a>
+              </h3>
+              <div class="text">
+                <p class="govuk-body">
+                  Aimed at those who have completed A levels, this scheme allows
+                  you to work at a large company and earn money whilst you
+                  train.
+                </p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-
-
- 
-      </div>
-<div class="govuk-grid-column-one-quarter">
-
-<img class="supported-filter" src="/public/images/GTJsupported.png">
-</div>
-
-    </div>
-
-
-
-
- </div>
-
-
-
-
-{# SCHOOL LEAVERS SCHEMES  #}
-
-<div class="filterDiv train unpaidPlacement short medium paid unpaid none 12">
-
-
-    <div class="card">
-      {# <img class="cardThumbnail" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt=""> #}
-      <h3 class="govuk-heading-s"><a href="school-leavers-scheme">School Leavers Schemes</a></h3>
-      <div class="text">
-        <p class="govuk-body">Aimed at those who have completed A levels, this scheme allows you to work at a large company and earn money whilst you train.  
- </p> 
-
-
-
-
-       
-      </div>
-
     </div>
   </div>
-
-
-
- </div>
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-
-
-
-</div>
-
-
-
-
-
-</div>
 </div>
 <section>
-  <div class="secondary-hero govuk-!-margin-top-5" style="background-color: rgba(210, 226, 241, 0.3); ">
+  <div
+    class="secondary-hero govuk-!-margin-top-5"
+    style="background-color: rgba(210, 226, 241, 0.3)"
+  >
     <div class="govuk-width-container">
-      <div class="govuk-grid-row  govuk-!-margin-left-0  govuk-!-margin-right-0">
+      <div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
         <div class="govuk-grid-column-two-third">
-          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Speak to an adviser</h2>
-          <p class="govuk-body">If you need help or advice around your exam results and next steps, you can call us on <span class="govuk-!-font-weight-bold"><a href="tel:0800 100 900">0800 100 900</a></span> (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or <a class="govuk-link" href="https://nationalcareers.service.gov.uk/webchat/chat">
-                        use webchat
-                    </a></p>
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">
+            Speak to an adviser
+          </h2>
+          <p class="govuk-body">
+            If you need help or advice around your exam results and next steps,
+            you can call us on
+            <span class="govuk-!-font-weight-bold"
+              ><a href="tel:0800 100 900">0800 100 900</a></span
+            >
+            (8am - 8pm Monday - Friday, 10am - 5pm Saturday) or
+            <a
+              class="govuk-link"
+              href="https://nationalcareers.service.gov.uk/webchat/chat"
+            >
+              use webchat
+            </a>
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<div class = "ec-hero-black" >
-    <div class="govuk-width-container">
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half">
-      <h3 class="govuk-heading-m">
-Additional support for:
-</h3>
-<hr>
-     <ul class="govuk-list govuk-list--bullet">
-     <li>
-     <a href="https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan" class="govuk-link--inverse">Students with SEND</a>
-     </li>
-     <li>
-     <a href="https://www.talkingfutures.org.uk/" class="govuk-link--inverse">Parents</a>
-     </li>
-      <li>
-      <a href="https://www.careersandenterprise.co.uk/" class="govuk-link--inverse">Teachers</a>
-     </li>
-      <li>
-      <a href="link-not-ready-yet" class="govuk-link--inverse">Adult learners</a><br><br><br>
-     </li>
-     </ul>
-  </div> 
+<div class="ec-hero-black">
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half">
-
- <h3 class="govuk-heading-m">
-Information for other countries:
-</h3>
-<hr>
-     <ul class="govuk-list govuk-list--bullet">
-     <li>
-     <a href="https://www.mygov.scot/leaving-school-options" class="govuk-link--inverse">Scotland</a>
-     </li>
-     <li>
-     <a href="https://careerswales.gov.wales/plan-your-career/options-at-16" class="govuk-link--inverse">Wales</a>
-     </li>
-      <li>
-      <a href="https://www.nidirect.gov.uk/articles/options-after-year-12" class="govuk-link--inverse">Northern Ireland</a>
-     </li>
-     </ul>
+        <h3 class="govuk-heading-m">Additional support for:</h3>
+        <hr />
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a
+              href="https://nationalcareers.service.gov.uk/careers-advice/options-with-education-health-and-care-plan"
+              class="govuk-link--inverse"
+              >Students with SEND</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.talkingfutures.org.uk/"
+              class="govuk-link--inverse"
+              >Parents</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.careersandenterprise.co.uk/"
+              class="govuk-link--inverse"
+              >Teachers</a
+            >
+          </li>
+          <li>
+            <a href="link-not-ready-yet" class="govuk-link--inverse"
+              >Adult learners</a
+            ><br /><br /><br />
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <h3 class="govuk-heading-m">Information for other countries:</h3>
+        <hr />
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a
+              href="https://www.mygov.scot/leaving-school-options"
+              class="govuk-link--inverse"
+              >Scotland</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://careerswales.gov.wales/plan-your-career/options-at-16"
+              class="govuk-link--inverse"
+              >Wales</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.nidirect.gov.uk/articles/options-after-year-12"
+              class="govuk-link--inverse"
+              >Northern Ireland</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
-  </div>
-  </div> 
-  </div>
 
-  {# <div class="govuk-width-container">
-
- <aside class="app-related-items govuk-!-margin-top-6" role="complementary">
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Other opportunities
-          </h2>
-          <ul class="govuk-list">
-            <li>
-              If you have a great business idea or want to be an entrepreneur, <a href="startabusinessURL">starting your own business</a> might be right for you. 
-            <br><br></li>
-            <li>
-              Get straight into the working world by <a href="getajobURL">getting a job</a> to start earning and gaining experience.
-              <br><br></li>
-            <li>
-              Gain work experience in a chosen job and learn about the industry by <a href="getaninternshipURL"> getting an internship</a>
-            <br><br></li>
-            <li>
-              You could also consider <a href="volunteerURL">volunteering</a> to strengthen your job and study opportunities
-            <br><br></li>
-            <li>
-            </li>
-          </ul>                  
-        </aside>
-    </div> 
-   
+<div class="govuk-width-container">
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-two-thirds"></div>
+  </div>
 
+  {% endblock %} {% block pageScripts %}
+
+  <script>
+    new MOJFrontend.FilterToggleButton({
+      bigModeMediaQuery: "(min-width: 48.063em)",
+      startHidden: false,
+      toggleButton: {
+        container: $(".moj-action-bar__filter"),
+        showText: "Filter schemes",
+        hideText: "Hide filter",
+        classes: "govuk-button--secondary",
+      },
+      closeButton: {
+        container: $(".moj-filter__header-action"),
+        text: "Close",
+      },
+      filter: {
+        container: $(".moj-filter"),
+      },
+    });
+
+    var button = document.getElementsByClassName(
+      "moj-action-bar__filter"
+    ).innerHTML;
+  </script>
+  {% endblock%}
 </div>
-
-</div> #}
-
-{% endblock %}
-
-
-
-
-
-
-
-
-{% block scripts %}
-
-<script>
-
-function ShowWithoutImages() {
-  var cardWithImage = document.getElementById("cardGroupWithImages");
-  var linkTitle = document.getElementById("showWithoutImages");
-  var cardNoImage = document.getElementById("cardGroupNoImages");
-
-  if (cardWithImage.style.display === "none") {
-    cardWithImage.style.display = "block";
-    cardNoImage.style.display = "none";
-    linkTitle.innerHTML = 'See these without images';
-  } else {
-    cardWithImage.style.display = "none";
-    cardNoImage.style.display = "block";
-    linkTitle.innerHTML = 'See these with images';
-  }
-  
-} 
-
-
-</script>
-
-
-
-{% endblock %}
